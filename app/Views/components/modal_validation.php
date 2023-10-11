@@ -28,7 +28,7 @@
                         </div>
                     </form>
                     <div class="col-12 d-flex justify-content-center">
-                        <p>Belum punya akun? <a href="#" class="text-decoration-none" id="showRegisterLink">Daftar</a> | Lupa kata sandi? <a href="#" class="text-decoration-none" id="showForgotPasswordLink">Forgot Password</a></p>
+                        <p>Belum punya akun? <a href="#" class="text-decoration-none" id="showRegisterLink">Daftar</a> | Lupa kata sandi? <a href="#" class="text-decoration-none" id="showForgotPasswordLink">Lupa Kata Sandi</a></p>
                     </div>
                 </div>
             </div>

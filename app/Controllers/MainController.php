@@ -28,4 +28,8 @@ class MainController extends BaseController
     {
         return view('pages/verifikasi_pdf.php');
     }
+    public function main_dashboard(): string
+    {
+        return view('pages/dashboard/maindashboard.php');
+    }
 }

@@ -68,6 +68,7 @@
     <script src="<?= base_url('bs/js/jquery.min.js') ?>"></script>
     <script src="<?= base_url('bs/js/bootstrap.min.js') ?>"></script>
     <script src="<?= base_url('bs/js/main.js') ?>"></script>
+    <script src="<?= base_url('bs/js/modal_validation.js') ?>"></script>
 
     <script>
         const tooltipTriggerList = document.querySelectorAll(
