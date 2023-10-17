@@ -25,7 +25,7 @@
                 <form action="" class="" enctype="multipart/form-data" method="post">
                     <div class="row ">
                         <div class="col-12 text-center text-xxl-start">
-                            <p class=" fs-3 fw-semibold text-uppercase">formulir pendaftaran sertifikat elektronik </p>
+                            <p class=" fs-3 fw-semibold text-uppercase">formulir permintaan tanda tangan elektronik </p>
                         </div>
                         <!-- radio -->
                         <div class="col-12 col-xxl-6 ">

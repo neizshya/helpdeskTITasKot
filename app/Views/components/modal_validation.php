@@ -54,8 +54,12 @@
                             <label for="nip">NIP (tanpa spasi)</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="nohp" placeholder="No. Telepon" required>
-                            <label for="nohp">No. Telepon</label>
+                            <input type="text" class="form-control" id="no_hp" placeholder="No. Telepon" required>
+                            <label for="no_hp">No. Telepon</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="nama_opd" placeholder="Nama OPD" required>
+                            <label for="nama_opd">Nama OPD</label>
                         </div>
                         <div class="mb-3">
                             For human challenge (captcha)

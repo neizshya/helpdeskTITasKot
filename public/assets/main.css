@@ -1,0 +1,33 @@
+.timeline {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.timeline-event {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  background: #f1f1f1;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.event-date {
+  font-size: 14px;
+}
+
+.event-content {
+  margin-top: 10px;
+}
+
+.event-gray {
+  background: #f1f1f1;
+}
+
+.event-green {
+  background: #4caf50;
+  color: #fff;
+}

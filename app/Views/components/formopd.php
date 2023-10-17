@@ -79,4 +79,14 @@
 
            </div>
        </div>
+       <!-- button -->
+       <div class="col-12 mt-3">
+           <div class="input-group d-flex align-items-center">
+               <!-- Standard button -->
+               <button class="btn btn-danger rounded me-2" type="submit" id="registrasi_ok" disabled>
+                   Registrasi
+               </button>
+               <small id="klik_cek"> *Klik tombol Cek sebelum registrasi.</small>
+           </div>
+       </div>
    </div>

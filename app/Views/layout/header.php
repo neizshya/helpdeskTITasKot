@@ -12,10 +12,10 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbars">
                 <ul class="navbar-nav text-center">
                     <li class="nav-item">
-                        <a href="#" class="text-decoration-none fw-medium link-info nav-link" data-bs-toggle="modal" data-bs-target="#modal_pengajuan">Alur Pengajuan</a>
+                        <a href="javascript:void(0)" class="text-decoration-none fw-medium link-info nav-link" data-bs-toggle="modal" data-bs-target="#modal_pengajuan">Alur Pengajuan</a>
                     </li>
                     <li class="nav-item mx-md-3">
-                        <a href="#" class="text-decoration-none fw-medium link-info nav-link" data-bs-toggle="modal" data-bs-target="#modal_FaQ">FAQ</a>
+                        <a href="javascript:void(0)" class="text-decoration-none fw-medium link-info nav-link" data-bs-toggle="modal" data-bs-target="#modal_FaQ">FAQ</a>
                     </li>
                     <li class="nav-item me-md-3">
                         <button type="button" class="nav-link btn p-2 btn-outline-primary text-body-secondary fw-semibold border border-dark-subtle w-100" data-bs-toggle="modal" data-bs-target="#modal_Validation">Masuk</button>

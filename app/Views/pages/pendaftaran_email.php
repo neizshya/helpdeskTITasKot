@@ -23,40 +23,32 @@
         <div class="col-xxl-3"></div>
         <div class="col-12 col-xxl-6">
             <div class="p-4 p-md-5 bg-white container mt-3 rounded-5 " style="min-height: 82vh;">
-                <form action="" class="" enctype="multipart/form-data" method="post">
-                    <div class="row ">
-                        <div class="col-12 text-center text-xxl-start">
-                            <p class=" fs-3 fw-semibold">Pendaftaran Email tasikmalayakota.go.id</p>
-                        </div>
-                        <!-- radio -->
-                        <div class="col-12 col-xxl-6 ">
-                            <div class="row">
-                                <div class="col-6">
-                                    <input type="radio" class="btn-check" name="pegawairadio" value="pegawai" id="pegawai" autocomplete="off" checked>
-                                    <label class="btn btn-outline-primary w-100" for="pegawai">Pegawai/OPD</label>
-                                </div>
-                                <div class="col-6">
-                                    <input type="radio" class="btn-check" name="pegawairadio" value="nonpegawai" id="nonpegawai" autocomplete="off">
-                                    <label class="btn btn-outline-primary w-100" for="nonpegawai">Non Pegawai</label>
-                                </div>
+                <div class="row ">
+                    <div class="col-12 text-center text-xxl-start">
+                        <p class=" fs-3 fw-semibold">Pendaftaran Email tasikmalayakota.go.id</p>
+                    </div>
+                    <!-- radio -->
+                    <div class="col-12 col-xxl-6 ">
+                        <div class="row">
+                            <div class="col-6">
+                                <input type="radio" class="btn-check" name="pegawairadio" value="pegawai" id="pegawai" autocomplete="off" checked>
+                                <label class="btn btn-outline-primary w-100" for="pegawai">Pegawai/OPD</label>
+                            </div>
+                            <div class="col-6">
+                                <input type="radio" class="btn-check" name="pegawairadio" value="nonpegawai" id="nonpegawai" autocomplete="off">
+                                <label class="btn btn-outline-primary w-100" for="nonpegawai">Non Pegawai</label>
                             </div>
                         </div>
+                    </div>
+                    <form action="" class="" enctype="multipart/form-data" method="post">
+
                         <?= view('components/formopd') ?>
                         <?= view('components/formnonopd') ?>
 
-                        <!-- button -->
-                        <div class="col-12 mt-3">
-                            <div class="input-group d-flex align-items-center">
-                                <!-- Standard button -->
-                                <button class="btn btn-danger rounded me-2" type="submit" id="registrasi_ok" disabled>
-                                    Registrasi
-                                </button>
-                                <small id="klik_cek"> *Klik tombol Cek sebelum registrasi.</small>
-                            </div>
-                        </div>
 
-                    </div>
-                </form>
+
+                    </form>
+                </div>
             </div>
         </div>
         <div class="col-xxl-3"></div>

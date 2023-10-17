@@ -65,5 +65,13 @@
                 <small><b> Upload surat tugas (PDF) </b> serta max 800kb </small>
             </div>
         </div>
-
+        <!-- button -->
+        <div class="col-12 mt-3">
+            <div class="input-group d-flex align-items-center">
+                <!-- Standard button -->
+                <button class="btn btn-danger rounded me-2" type="submit" id="registrasi_ok" disabled>
+                    Registrasi
+                </button>
+            </div>
+        </div>
     </div>

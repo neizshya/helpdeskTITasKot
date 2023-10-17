@@ -36,11 +36,14 @@
             <div class="row row-gap-3 ">
                 <!--  baris pertama -->
 
+
                 <?= view('components/home_card', [
                     'imageSrc' => '/assets/icon/data-center.png',
-                    'text' => 'Akses Servers | Data Center',
+                    'text' => 'Layanan Pengembangan Aplikasi',
                     // if logged in can access, if not, showing modal
-                    'link' => '#'
+                    // 'link' => '#',
+                    'attributes' => 'href = "/form/layanan_pengembangan_aplikasi"'
+
                 ]) ?>
 
                 <?= view('components/home_card', [
@@ -48,21 +51,18 @@
                     'text' =>
                     'Hosting & Subdomain Web',
                     // if logged in can access, if not, showing modal
+                    'attributes' => 'href = "/form/hosting"'
 
-                    'link' => '#'
+                    // 'link' => '/form/hosting'
                 ]) ?>
                 <?= view('components/home_card', [
                     'imageSrc' => '/assets/icon/support-ticket.png',
                     'text' =>
                     'Cek Ticket',
-                    'link' => '/form/cek_ticket'
+                    'attributes' => 'href = "/form/cek_ticket"'
+                    // 'link' => '/form/cek_ticket'
                 ]) ?>
-                <?= view('components/home_card', [
-                    'imageSrc' => '/assets/icon/open-book.png',
-                    'text' =>
-                    'Layanan Pengetahuan',
-                    'link' => '#'
-                ]) ?>
+
 
 
 
@@ -74,27 +74,21 @@
                     'imageSrc' => '/assets/icon/guest-list.png',
                     'text' =>
                     'Tamu Data Center',
-                    'link' => '/tamu'
+                    'attributes' => 'href = "/form/tamu"'
                 ]) ?>
                 <?= view('components/home_card', [
                     'imageSrc' => '/assets/icon/database.png',
                     'text' =>
                     'Backup | Restore DB',
                     // if logged in can access, if not, showing modal
-
-                    'link' => '#'
+                    'attributes' => 'href = "#"'
                 ]) ?>
                 <?= view('components/home_card', [
                     'imageSrc' => '/assets/icon/sertificate.png',
                     'text' =>
-                    'Sertifikat Elektronik',
-                    'link' => '/form/e-sertifikat'
-                ]) ?>
-                <?= view('components/home_card', [
-                    'imageSrc' => '/assets/icon/verification.png',
-                    'text' =>
-                    'Verifikasi PDF',
-                    'link' => '/verifikasi_pdf'
+                    'Tanda Tangan Elektronik',
+                    'attributes' => 'href = "/form/e-sertifikat"'
+                    // 'link' => '/form/e-sertifikat'
                 ]) ?>
 
 
@@ -104,27 +98,26 @@
                 <!--  -->
                 <!-- baris ketiga -->
 
-
-                <div class="d-none col-lg-3 d-xl-flex  justify-content-center align-items-center ">
+                <div class="d-none col-lg-2 d-xl-flex  justify-content-center align-items-center ">
 
                 </div>
+
                 <?= view('components/home_card', [
                     'imageSrc' => '/assets/icon/connection.png',
                     'text' =>
                     'Jaringan',
                     // if logged in can access, if not, showing modal
-
-                    'link' => '#'
+                    'attributes' => 'href = "#"'
+                    // 'link' => '#'
                 ]) ?>
                 <?= view('components/home_card', [
                     'imageSrc' => '/assets/icon/email.png',
                     'text' =>
                     'E-mail',
-                    'link' => '/form/pendaftaran_email'
+                    'attributes' => 'href = "/form/pendaftaran_email"',
+                    // 'link' => '/form/pendaftaran_email'
                 ]) ?>
-                <div class="d-none col-lg-3 d-xl-flex  justify-content-center align-items-center ">
 
-                </div>
                 <!--  -->
                 <!-- 3 garis terakhir -->
                 <!--  -->
