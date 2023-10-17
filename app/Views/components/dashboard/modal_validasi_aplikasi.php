@@ -11,16 +11,16 @@
                         <div class="row">
                             <div class="col-12 ">
                                 <div class="row mb-3">
-                                    <label for="tanggal_pengajuan_diterima" class="col-sm-4 col-form-label">Diterima pada tanggal</label>
-                                    <div class="col-sm-8">
+                                    <label for="tanggal_pengajuan_diterima" class="col-sm-12 col-form-label">Diterima pada tanggal</label>
+                                    <div class="col-sm-12">
                                         <input type="date" class="form-control w-50" id="tanggal_pengajuan_diterima" placeholder="Masukan Tanggal Pengajuan diterima" value="<?php echo date('Y-m-d'); ?>" required>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-12 ">
                                 <div class="row mb-3">
-                                    <label for="nomor_pengajuan_diterima" class="col-sm-2 col-form-label">Nomor Pengajuan Pengembangan</label>
-                                    <div class="col-sm-10">
+                                    <label for="nomor_pengajuan_diterima" class="col-sm-12 col-form-label">Nomor Pengajuan Pengembangan</label>
+                                    <div class="col-sm-12">
                                         <input type="text" class="form-control w-50" id="nomor_pengajuan_diterima" placeholder="Masukan nomor pengajuan pengembangan" required>
                                     </div>
                                 </div>
