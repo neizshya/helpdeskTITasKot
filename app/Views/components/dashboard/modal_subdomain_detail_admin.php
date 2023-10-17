@@ -1,16 +1,16 @@
-    <div class="modal fade" id="modal_detail_admin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="modal_subdomain_detail_admin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog  modal-lg">
             <div class="modal-content ">
                 <div class="modal-header">
                     <h1 class="modal-title fs-5" id="exampleModalLabel">
-                        Detail Pengembangan Aplikasi
+                        Detail Pembuatan Hosting & Subdomain
                     </h1>
                 </div>
                 <div class="modal-body">
                     <div class="d-flex row justify-content-center align-items-center">
                         <div class="col-12 text-center">
 
-                            <p class="text-uppercase fw-semibold">Status pengembangan</p>
+                            <p class="text-uppercase fw-semibold">Status Pembuatan</p>
                         </div>
                         <div class="col-12">
                             <table class="table table-bordered table-striped text-center">
@@ -21,7 +21,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <?php $processes = ['Wawancara', 'Konfirmasi Desain', 'Perancangan Database', 'Pengembangan Software', 'Debugging', 'Testing', 'User Manual', 'Implementasi'];
+                                    <?php $processes = ['Permohonan', 'Proses', 'Selesai'];
                                     foreach ($processes as $process) : ?>
                                         <tr>
                                             <td><?= $process ?></td>

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Layanan Pengembangan Aplikasi | Helpdesk Kominfo Kota Tasikmalaya</title>
+    <title>Hosting & Subdomain | Helpdesk Kominfo Kota Tasikmalaya</title>
     <meta name="description" content="The small framework with powerful features">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="/assets/logo_tasik.svg">
@@ -34,10 +34,10 @@
     <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
         <!-- Navbar -->
         <?php echo $this->include("layout/navbar_dashboard.php") ?>
-        <?= view('components/dashboard/modal_tolak_aplikasi') ?>
-        <?= view('components/dashboard/modal_validasi_aplikasi') ?>
-        <?= view('components/dashboard/modal_detail_admin') ?>
-        <?= view('components/dashboard/modal_detail_user') ?>
+        <?= view('components/dashboard/modal_subdomain_tolak_aplikasi') ?>
+        <?= view('components/dashboard/modal_subdomain_validasi_aplikasi') ?>
+        <?= view('components/dashboard/modal_subdomain_detail_admin') ?>
+        <?= view('components/dashboard/modal_subdomain_detail_user') ?>
         <!-- End Navbar -->
         <div class="container-fluid py-4">
             <div style=" min-height:80vh;max-width: 100%;overflow-x: auto;">
@@ -47,39 +47,37 @@
                         <tr>
                             <th>Nomor Pengajuan</th>
                             <th>Tanggal Pengajuan</th>
+                            <th>NIP</th>
                             <th>Nama OPD</th>
-                            <th>Nama Sistem</th>
-                            <th>Nama Pengaju</th>
-                            <th>Nama Kasie</th>
-                            <th>Nama Kabid</th>
-                            <th>Jenis</th>
-                            <th>Rencana Kerja</th>
-                            <th>Masalah Sistem</th>
-                            <th>Output/Hasil yang Diharapkan</th>
-                            <th>Ekspektasi Manfaat</th>
+                            <th>Nama Penanggung Jawab</th>
+                            <th>Nomor Kontak</th>
+                            <th>Email</th>
+                            <th>Alamat OPD</th>
+                            <th>Nama Subdomain</th>
+                            <th>Lokasi Server</th>
+                            <th>Keterangan</th>
                             <th>Status</th>
                             <th>Actions</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>643513535</td>
+                            <td>567413654</td>
                             <td>2023-10-16</td>
+                            <td>6445531335</td>
                             <td>OPD A</td>
-                            <td>Sistem A</td>
                             <td>John Doe</td>
-                            <td>Jane Smith</td>
-                            <td>Michael Johnson</td>
-                            <td>Sistem Baru</td>
-                            <td>Rencana Kerja</td>
-                            <td>Masalah Sistem</td>
-                            <td>Output/Hasil</td>
-                            <td>Ekspektasi Manfaat</td>
+                            <td>4435313553</td>
+                            <td>jodn@mail.tasikmalayakota.go.id</td>
+                            <td>alamat OPD A</td>
+                            <td>Subdomain</td>
+                            <td>server OPD</td>
+                            <td>Keterangan A</td>
                             <td>Diterima</td>
                             <td>
-                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal_validasi">Validasi</button>
-                                <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal_tolak">Tolak</button>
-                                <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modal_detail_admin">Details</button>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal_subdomain_validasi">Validasi</button>
+                                <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal_subdomain_tolak">Tolak</button>
+                                <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modal_subdomain_detail_admin">Details</button>
                             </td>
                         </tr>
                         <!-- Add more rows as needed -->
@@ -91,52 +89,49 @@
                         <tr>
                             <th>Nomor Pengajuan</th>
                             <th>Tanggal Pengajuan</th>
+                            <th>NIP</th>
                             <th>Nama OPD</th>
-                            <th>Nama Sistem</th>
-                            <th>Nama Pengaju</th>
-                            <th>Nama Kasie</th>
-                            <th>Nama Kabid</th>
-                            <th>Jenis</th>
-                            <th>Rencana Kerja</th>
-                            <th>Masalah Sistem</th>
-                            <th>Output/Hasil yang Diharapkan</th>
-                            <th>Ekspektasi Manfaat</th>
+                            <th>Nama Penanggung Jawab</th>
+                            <th>Nomor Kontak</th>
+                            <th>Email</th>
+                            <th>Alamat OPD</th>
+                            <th>Nama Subdomain</th>
+                            <th>Lokasi Server</th>
+                            <th>Keterangan</th>
                             <th>Status</th>
                             <th>Actions</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>5464646465</td>
+                            <td>6543133134</td>
                             <td>2023-10-16</td>
+                            <td>6445531335</td>
                             <td>OPD A</td>
-                            <td>Sistem A</td>
                             <td>John Doe</td>
-                            <td>Jane Smith</td>
-                            <td>Michael Johnson</td>
-                            <td>Sistem Baru</td>
-                            <td>Rencana Kerja</td>
-                            <td>Masalah Sistem</td>
-                            <td>Output/Hasil</td>
-                            <td>Ekspektasi Manfaat</td>
+                            <td>4435313553</td>
+                            <td>jodn@mail.tasikmalayakota.go.id</td>
+                            <td>alamat OPD A</td>
+                            <td>Subdomain</td>
+                            <td>server OPD</td>
+                            <td>Keterangan A</td>
                             <td>Diterima</td>
                             <td>
-                                <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modal_detail_user">Details</button>
+                                <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modal_subdomain_detail_user">Details</button>
                             </td>
                         </tr>
                         <tr>
-                            <td>546136515</td>
+                            <td>56541561544</td>
                             <td>2023-10-16</td>
-                            <td>OPD B</td>
-                            <td>Sistem A</td>
+                            <td>6445531335</td>
+                            <td>OPD A</td>
                             <td>John Doe</td>
-                            <td>Jane Smith</td>
-                            <td>Michael Johnson</td>
-                            <td>Sistem Baru</td>
-                            <td>Rencana Kerja</td>
-                            <td>Masalah Sistem</td>
-                            <td>Output/Hasil</td>
-                            <td>Ekspektasi Manfaat</td>
+                            <td>4435313553</td>
+                            <td>jodn@mail.tasikmalayakota.go.id</td>
+                            <td>alamat OPD A</td>
+                            <td>Subdomain</td>
+                            <td>server OPD</td>
+                            <td>Keterangan A</td>
                             <td>Ditolak</td>
                             <td>
                                 <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modal_details">Details</button>
@@ -202,11 +197,26 @@
             });
         });
     </script>
+    <script>
+        const radioButtons = document.querySelectorAll('input[type="radio"]');
+        const hostingLuarTextArea = document.getElementById('hosting_luar_text_area');
 
+        radioButtons.forEach(radioButton => {
+            radioButton.addEventListener('change', () => {
+                radioButtons.forEach(rb => {
+                    rb !== radioButton ? (rb.checked = false) : null;
+                });
 
-
-
-
+                if (radioButton.id === 'hosting_luar' && radioButton.checked) {
+                    hostingLuarTextArea.classList.remove('d-none');
+                    hostingLuarTextArea.classList.add('d-block');
+                } else {
+                    hostingLuarTextArea.classList.add('d-none');
+                    hostingLuarTextArea.classList.remove('d-block');
+                }
+            });
+        });
+    </script>
 
     <script>
         var win = navigator.platform.indexOf('Win') > -1;

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hosting & Subdomain | Helpdesk Kominfo Kota Tasikmalaya</title>
+    <title>Backup | Restore DB | Helpdesk Kominfo Kota Tasikmalaya</title>
     <link rel="shortcut icon" type="image/png" href="/assets/logo_tasik.svg">
     <link rel="stylesheet" href="<?= base_url('bs/css/bootstrap.min.css') ?>">
     <link rel="stylesheet" href="<?= base_url('bs/css/style.css') ?>">
@@ -23,7 +23,7 @@
     <div class=" bg-white container w-50 mt-3 rounded-5 p-5" style="min-height: 82vh;">
         <div class="row ">
             <div class="col-12 d-flex justify-content-center">
-                <p class="fs-4 fw-semibold">Form Isian Hosting & Subdomain</p>
+                <p class="fs-4 fw-semibold">Form Isian Backup | Restore DB</p>
             </div>
             <div class="col-12 mt-3">
                 <form class="d-flex justify-content-center" action="POST">
@@ -57,49 +57,14 @@
                         <div class="col-12 mb-3">
                             <div class="input-group ">
                                 <span class="input-group-text" id="addon-wrapping"> <img src="<?= base_url('/assets/icon/check-square.svg') ?>" alt=""></span>
-                                <input type="text" class="form-control" placeholder="Nomor Kontak" aria-label=no_kontak" aria-describedby="addon-wrapping" id="no_kontak_input" required>
-
+                                <input type="text" class="form-control" placeholder="Nama Aplikasi" aria-label="nama_aplikasi" aria-describedby="addon-wrapping" id="nama_aplikasi" required>
                             </div>
                         </div>
                         <div class="col-12 mb-3">
                             <div class="input-group ">
                                 <span class="input-group-text" id="addon-wrapping"> <img src="<?= base_url('/assets/icon/check-square.svg') ?>" alt=""></span>
-                                <input type="email" class="form-control" placeholder="Email" aria-label="email" aria-describedby="addon-wrapping" id="email_input" required readonly disabled>
+                                <input type="text" class="form-control" placeholder="Link Aplikasi" aria-label="link_aplikasi" aria-describedby="addon-wrapping" id="link_aplikasi" required>
                             </div>
-                        </div>
-                        <div class="col-12 mb-3">
-                            <div class="input-group">
-                                <span class="input-group-text" id="addon-wrapping"> <img src="<?= base_url('/assets/icon/check-square.svg') ?>" alt=""></span>
-                                <textarea class="form-control" aria-label="alamat_opd" id="alamat_opd" placeholder="Alamat OPD"></textarea>
-                            </div>
-                        </div>
-                        <div class="col-12 mb-3">
-                            <div class="input-group ">
-                                <span class="input-group-text" id="addon-wrapping"> <img src="<?= base_url('/assets/icon/check-square.svg') ?>" alt=""></span>
-                                <input type="text" class="form-control" placeholder="Nama Subdomain (namadomain.tasikmalayakota.go.id" aria-label="nama_subdomain" aria-describedby="addon-wrapping" id="nama_subdomain" required>
-                            </div>
-                        </div>
-                        <div class="col-12 mb-3">
-                            <p>Lokasi Server :</p>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="server" id="server_opd" value="server_opd" checked>
-                                <label class="form-check-label" for="server_opd">
-                                    Server OPD
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="server" id="server_kominfo" value="server_kominfo">
-                                <label class="form-check-label" for="server_kominfo">
-                                    Server Kominfo
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="server" id="hosting_luar" value="hosting_luar">
-                                <label class="form-check-label" for="hosting_luar">
-                                    Hosting diluar (IP / ns Hosting)
-                                </label>
-                            </div>
-                            <textarea class="w-100 d-none" name="hosting_luar" id="hosting_luar_text_area"></textarea>
                         </div>
                         <div class="col-12 mb-3">
                             <p>Keterangan :</p>

@@ -66,10 +66,10 @@
                  </a>
              </li>
              <li class="nav-item ">
-                 <a class="nav-link  " href="#">
+                 <a class="nav-link <?= ($activePage === 'subdomain') ? 'active' : '' ?> " href="/dashboard/subdomain">
                      <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
 
-                         <img src="<?= base_url('assets/icon/envelope.svg') ?>" alt="">
+                         <img src="<?= base_url('assets/icon/domains.svg') ?>" alt="">
                      </div>
                      <span class="nav-link-text ms-1">Subdomain</span>
                  </a>
@@ -84,14 +84,33 @@
                  </a>
              </li>
              <li class="nav-item ">
+                 <a class="nav-link  <?= ($activePage === 'backup') ? 'active' : '' ?>" href="/dashboard/backup">
+                     <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
+
+                         <img src="<?= base_url('assets/icon/db.svg') ?>" alt="">
+                     </div>
+                     <span class="nav-link-text ms-1">Backup / Restore DB</span>
+                 </a>
+             </li>
+             <li class="nav-item ">
                  <a class="nav-link  " href="#">
                      <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
 
                          <img src="<?= base_url('assets/icon/envelope.svg') ?>" alt="">
                      </div>
-                     <span class="nav-link-text ms-1">Backup / Restore DB</span>
+                     <span class="nav-link-text ms-1">Jaringan</span>
                  </a>
              </li>
+             <li class="nav-item ">
+                 <a class="nav-link  " href="#">
+                     <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
+
+                         <img src="<?= base_url('assets/icon/envelope.svg') ?>" alt="">
+                     </div>
+                     <span class="nav-link-text ms-1">Tamu Data Center</span>
+                 </a>
+             </li>
+
              <li class="nav-item ">
                  <a class="nav-link  " href="#">
                      <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">

@@ -57,4 +57,50 @@ class DashboardController extends BaseController
         $title = 'Layanan Pengembangan Aplikasi';
         return view('pages/dashboard/layanan_pengembangan.php', ['activePage' => $activePage, 'title' => $title, 'timeline' => $data]);
     }
+    public function subdomain(): string
+    {
+        $data = [
+            [
+                'date' => '2023-01-01',
+                'event' => 'Permohonan',
+                'status' => true,
+            ],
+            [
+                'date' => '2023-02-15',
+                'event' => 'Proses',
+                'status' => true,
+            ],
+            [
+                'date' => '2023-02-15',
+                'event' => 'Selesai',
+                'status' => false,
+            ]
+        ];
+        $activePage = 'subdomain';
+        $title = 'Hosting & Subdomain';
+        return view('pages/dashboard/subdomain.php', ['activePage' => $activePage, 'title' => $title, 'timeline' => $data]);
+    }
+    public function backup(): string
+    {
+        $data = [
+            [
+                'date' => '2023-01-01',
+                'event' => 'Permohonan',
+                'status' => true,
+            ],
+            [
+                'date' => '2023-02-15',
+                'event' => 'Proses',
+                'status' => true,
+            ],
+            [
+                'date' => '2023-02-15',
+                'event' => 'Selesai',
+                'status' => false,
+            ]
+        ];
+        $activePage = 'backup';
+        $title = 'Backup | Restore DB';
+        return view('pages/dashboard/backup_restore.php', ['activePage' => $activePage, 'title' => $title, 'timeline' => $data]);
+    }
 }

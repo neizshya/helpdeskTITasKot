@@ -81,7 +81,7 @@
                     'text' =>
                     'Backup | Restore DB',
                     // if logged in can access, if not, showing modal
-                    'attributes' => 'href = "#"'
+                    'attributes' => 'href = "/form/backup_restore_db"'
                 ]) ?>
                 <?= view('components/home_card', [
                     'imageSrc' => '/assets/icon/sertificate.png',
@@ -108,14 +108,12 @@
                     'Jaringan',
                     // if logged in can access, if not, showing modal
                     'attributes' => 'href = "#"'
-                    // 'link' => '#'
                 ]) ?>
                 <?= view('components/home_card', [
                     'imageSrc' => '/assets/icon/email.png',
                     'text' =>
                     'E-mail',
                     'attributes' => 'href = "/form/pendaftaran_email"',
-                    // 'link' => '/form/pendaftaran_email'
                 ]) ?>
 
                 <!--  -->

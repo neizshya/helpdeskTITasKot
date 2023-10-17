@@ -36,8 +36,8 @@ class MainController extends BaseController
     {
         return view('pages/hosting.php');
     }
-    public function main_dashboard(): string
+    public function backup(): string
     {
-        return view('pages/dashboard/maindashboard.php');
+        return view('pages/backup.php');
     }
 }
