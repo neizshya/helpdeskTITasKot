@@ -26,7 +26,7 @@
                 <p class="fs-4 fw-semibold">Form Isian Backup | Restore DB</p>
             </div>
             <div class="col-12 mt-3">
-                <form class="d-flex justify-content-center" action="POST">
+                <form class="d-flex justify-content-center" action="POST" enctype="multipart/form-data">
                     <div class="row  w-75">
                         <div class="col-12 mb-3">
                             <div class="input-group">

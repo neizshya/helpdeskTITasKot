@@ -40,4 +40,9 @@ class MainController extends BaseController
     {
         return view('pages/backup.php');
     }
+    public function jaringan(): string
+    {
+        $data['api_key'] = 'AIzaSyAWgRbJ2zirzZu-LQeM72OWuVpzdeNYiIU';
+        return view('pages/jaringan.php', $data);
+    }
 }

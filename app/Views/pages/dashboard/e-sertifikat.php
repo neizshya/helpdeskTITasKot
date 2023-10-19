@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Backup | Restore DB | Helpdesk Kominfo Kota Tasikmalaya</title>
+    <title>Tanda Tangan Elektronik | Helpdesk Kominfo Kota Tasikmalaya</title>
     <meta name="description" content="The small framework with powerful features">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="/assets/logo_tasik.svg">
@@ -34,45 +34,48 @@
     <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
         <!-- Navbar -->
         <?php echo $this->include("layout/navbar_dashboard.php") ?>
-        <?= view('components/dashboard/modal_db_tolak_aplikasi') ?>
-        <?= view('components/dashboard/modal_db_validasi_aplikasi') ?>
-        <?= view('components/dashboard/modal_db_detail_admin') ?>
-        <?= view('components/dashboard/modal_db_detail_user') ?>
+        <?= view('components/dashboard/modal_e-sertifikat_tolak_aplikasi') ?>
+        <?= view('components/dashboard/modal_e-sertifikat_validasi_aplikasi') ?>
+        <?= view('components/dashboard/modal_e-sertifikat_detail_admin') ?>
+        <?= view('components/dashboard/modal_e-sertifikat_detail_user') ?>
         <!-- End Navbar -->
         <div class="container-fluid py-4">
             <div style=" min-height:80vh;max-width: 100%;overflow-x: auto;">
-                <p>admin</p>
-                <table class="table table-bordered table-striped mt-4">
+                <p>admin only</p>
+                <table class="table table-bordered table-striped mt-4 ">
                     <thead>
                         <tr class="text-center">
+
                             <th>Nomor Pengajuan</th>
-                            <th>Tanggal Pengajuan</th>
-                            <th>NIP</th>
-                            <th>Nama OPD</th>
-                            <th>Nama Penanggung Jawab</th>
-                            <th>Nama Aplikasi</th>
-                            <th>Link Aplikasi</th>
-                            <th>Keterangan</th>
+                            <th>Status</th>
+                            <th>Nama Lengkap</th>
+                            <th>Pangkat / Gol. Ruang</th>
+                            <th>Jabatan</th>
+                            <th>Instansi</th>
+                            <th>Unit Kerja</th>
+                            <th>Nomor Telepon</th>
+                            <th>Foto KTP</th>
                             <th>Status Pengajuan</th>
                             <th>Actions</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="text-center">
-                            <td>5566135615</td>
-                            <td>2023-10-16</td>
-                            <td>6445531335</td>
-                            <td>OPD A</td>
-                            <td>John Doe</td>
-                            <td>Nama Aplikasi A</td>
-                            <td>Link Aplikasi A</td>
-                            <td>Keterangan A</td>
-
-                            <td>Diterima</td>
+                        <tr class="text-center align-content-center">
+                            <td>567413654</td>
+                            <td>Pengajuan</td>
+                            <td>Nama A</td>
+                            <td>Pangkat A</td>
+                            <td>Jabatan A</td>
+                            <td>Instansi A</td>
+                            <td>Unit kerja A</td>
+                            <td>515166165165</td>
+                            <td><img src="https://avatars.akamai.steamstatic.com/fab9f6e14530bb7ab8f259edfab656b97d6111e2_full.jpg" alt="" style="max-width:10vw;max-height:25vh"></td>
+                            <td>Divalidasi</td>
+                            <!-- <td><img src="https://cdn.pixabay.com/photo/2016/03/23/04/01/woman-1274056_1280.jpg" alt="" style="max-width:10vw;max-height:25vh"></td> -->
                             <td>
-                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal_db_validasi">Validasi</button>
-                                <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal_db_tolak">Tolak</button>
-                                <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modal_db_detail_admin">Details</button>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal_e-sertifikat_validasi">Validasi</button>
+                                <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal_e-sertifikat_tolak">Tolak</button>
+                                <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modal_e-sertifikat_detail_admin">Details</button>
                             </td>
                         </tr>
                         <!-- Add more rows as needed -->
@@ -83,45 +86,33 @@
                     <thead>
                         <tr class="text-center">
                             <th>Nomor Pengajuan</th>
-                            <th>Tanggal Pengajuan</th>
-                            <th>NIP</th>
-                            <th>Nama OPD</th>
-                            <th>Nama Penanggung Jawab</th>
-                            <th>Nama Aplikasi</th>
-                            <th>Link Aplikasi</th>
-                            <th>Keterangan</th>
+                            <th>Status</th>
+                            <th>Nama Lengkap</th>
+                            <th>Pangkat / Gol. Ruang</th>
+                            <th>Jabatan</th>
+                            <th>Instansi</th>
+                            <th>Unit Kerja</th>
+                            <th>Nomor Telepon</th>
+                            <th>Foto KTP</th>
                             <th>Status Pengajuan</th>
                             <th>Actions</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="text-center">
-                            <td>515615415615651</td>
-                            <td>2023-10-16</td>
-                            <td>6445531335</td>
-                            <td>OPD A</td>
-                            <td>John Doe</td>
-                            <td>Nama Aplikasi A</td>
-                            <td>Link Aplikasi A</td>
-                            <td>Keterangan A</td>
-
-                            <td>Diterima</td>
+                        <tr class="text-center align-content-center">
+                            <td>567413654</td>
+                            <td>Pengajuan</td>
+                            <td>Nama A</td>
+                            <td>Pangkat A</td>
+                            <td>Jabatan A</td>
+                            <td>Instansi A</td>
+                            <td>Unit kerja A</td>
+                            <td>515166165165</td>
+                            <td><img src="https://avatars.akamai.steamstatic.com/fab9f6e14530bb7ab8f259edfab656b97d6111e2_full.jpg" alt="" style="max-width:10vw;max-height:25vh"></td>
+                            <td>Divalidasi</td>
+                            <!-- <td><img src="https://cdn.pixabay.com/photo/2016/03/23/04/01/woman-1274056_1280.jpg" alt="" style="max-width:10vw;max-height:25vh"></td> -->
                             <td>
-                                <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modal_db_detail_user">Details</button>
-                            </td>
-                        </tr>
-                        <tr class="text-center">
-                            <td>6846166161661</td>
-                            <td>2023-10-16</td>
-                            <td>6445531335</td>
-                            <td>OPD A</td>
-                            <td>John Doe</td>
-                            <td>Nama Aplikasi A</td>
-                            <td>Link Aplikasi A</td>
-                            <td>Keterangan A</td>
-                            <td>Ditolak</td>
-                            <td>
-                                <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modal_details">Details</button>
+                                <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modal_e-sertifikat_detail_user">Details</button>
                             </td>
                         </tr>
                         <!-- Add more rows as needed -->

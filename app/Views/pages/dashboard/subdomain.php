@@ -42,9 +42,9 @@
         <div class="container-fluid py-4">
             <div style=" min-height:80vh;max-width: 100%;overflow-x: auto;">
                 <p>admin</p>
-                <table class="table table-bordered table-striped mt-4">
+                <table class="table table-bordered table-striped mt-4 ">
                     <thead>
-                        <tr>
+                        <tr class="text-center">
                             <th>Nomor Pengajuan</th>
                             <th>Tanggal Pengajuan</th>
                             <th>NIP</th>
@@ -56,12 +56,12 @@
                             <th>Nama Subdomain</th>
                             <th>Lokasi Server</th>
                             <th>Keterangan</th>
-                            <th>Status</th>
+                            <th>Status Pengajuan</th>
                             <th>Actions</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
+                        <tr class="text-center">
                             <td>567413654</td>
                             <td>2023-10-16</td>
                             <td>6445531335</td>
@@ -86,7 +86,7 @@
                 <p>user</p>
                 <table class="table table-bordered table-striped mt-4">
                     <thead>
-                        <tr>
+                        <tr class="text-center">
                             <th>Nomor Pengajuan</th>
                             <th>Tanggal Pengajuan</th>
                             <th>NIP</th>
@@ -98,12 +98,12 @@
                             <th>Nama Subdomain</th>
                             <th>Lokasi Server</th>
                             <th>Keterangan</th>
-                            <th>Status</th>
+                            <th>Status Pengajuan</th>
                             <th>Actions</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
+                        <tr class="text-center">
                             <td>6543133134</td>
                             <td>2023-10-16</td>
                             <td>6445531335</td>
@@ -120,7 +120,7 @@
                                 <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modal_subdomain_detail_user">Details</button>
                             </td>
                         </tr>
-                        <tr>
+                        <tr class="text-center">
                             <td>56541561544</td>
                             <td>2023-10-16</td>
                             <td>6445531335</td>

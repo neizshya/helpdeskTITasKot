@@ -42,13 +42,6 @@
                </div>
            </div>
        </div>
-       <!-- password -->
-       <div class="col-12 mt-3">
-           <div class="input-group">
-               <span class="input-group-text " id="addon-wrapping"> <img src="<?= base_url('/assets/icon/key.svg') ?>" alt=""></span>
-               <input type="password" class="form-control" data-bs-toggle="tooltip" data-bs-placement="top" name="password_input" id="password_input" placeholder="Password" aria-label="password" aria-describedby="addon-wrapping" required>
-           </div>
-       </div>
 
        <!-- Nama lengkap -->
 

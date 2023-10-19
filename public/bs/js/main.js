@@ -9,25 +9,6 @@ inputs.forEach((input) => {
   });
 });
 
-const pegawaiRadio = document.getElementById("pegawai");
-const nonpegawaiRadio = document.getElementById("nonpegawai");
-const opdForm = document.getElementById("opdForm");
-const nonOpdForm = document.getElementById("nonOpdForm");
-
-pegawaiRadio.addEventListener("change", () => {
-  if (pegawaiRadio.checked) {
-    opdForm.classList.remove("d-none");
-    nonOpdForm.classList.add("d-none");
-  }
-});
-
-nonpegawaiRadio.addEventListener("change", () => {
-  if (nonpegawaiRadio.checked) {
-    nonOpdForm.classList.remove("d-none");
-    opdForm.classList.add("d-none");
-  }
-});
-
 var passwordInputs = document.getElementById("password_input");
 var passwordInputsNon = document.getElementById("password_input_non");
 

@@ -63,8 +63,77 @@
     <script src="<?= base_url('bs/js/modal_validation.js') ?>"></script>
 
     <script src="<?= base_url('bs/js/main.js') ?>"></script>
+    <script>
+        const pegawaiRadio = document.getElementById("pegawai");
+        const nonpegawaiRadio = document.getElementById("nonpegawai");
+        const opdForm = document.getElementById("opdForm");
+        const nonOpdForm = document.getElementById("nonOpdForm");
 
+        pegawaiRadio.addEventListener("change", () => {
+            if (pegawaiRadio.checked) {
+                opdForm.classList.remove("d-none");
+                nonOpdForm.classList.add("d-none");
+            }
+        });
 
+        nonpegawaiRadio.addEventListener("change", () => {
+            if (nonpegawaiRadio.checked) {
+                nonOpdForm.classList.remove("d-none");
+                opdForm.classList.add("d-none");
+            }
+        });
+    </script>
+    <script>
+        const ktp = document.getElementById('ktp')
+        const berkas = document.getElementById('berkas')
+        const nonktp = document.getElementById('nonktp')
+        const surattugas = document.getElementById('surattugas')
+
+        berkas.addEventListener('change', (event) => {
+            const target = event.target
+            if (target.files && target.files[0]) {
+
+                const maxAllowedSize = 800 * 1024; // 800KB
+                if (target.files[0].size > maxAllowedSize) {
+                    alert("Foto melebihi batas maksimal yang dapat diterima")
+                    target.value = ''
+                }
+            }
+        })
+        nonktp.addEventListener('change', (event) => {
+            const target = event.target
+            if (target.files && target.files[0]) {
+
+                const maxAllowedSize = 800 * 1024; // 800KB
+                if (target.files[0].size > maxAllowedSize) {
+                    alert("Foto melebihi batas maksimal yang dapat diterima")
+                    target.value = ''
+                }
+            }
+        })
+        ktp.addEventListener('change', (event) => {
+            const target = event.target
+            if (target.files && target.files[0]) {
+
+                const maxAllowedSize = 800 * 1024; // 800KB
+                if (target.files[0].size > maxAllowedSize) {
+                    alert("Foto melebihi batas maksimal yang dapat diterima")
+                    target.value = ''
+                }
+            }
+        })
+        surattugas.addEventListener('change', (event) => {
+            const target = event.target
+            if (target.files && target.files[0]) {
+
+                const maxAllowedSize = 800 * 1024; // 800KB
+                if (target.files[0].size > maxAllowedSize) {
+                    alert("Foto melebihi batas maksimal yang dapat diterima")
+                    target.value = ''
+                }
+            }
+        })
+    </script>
     <script>
         const passwordInput = document.getElementById("password");
         const button = document.getElementById("button-addon1");

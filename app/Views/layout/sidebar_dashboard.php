@@ -1,7 +1,7 @@
  <aside class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3 bg-white" id="sidenav-main">
      <div class="sidenav-header">
          <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
-         <a class="navbar-brand m-0" href="/dashboard " target="_blank">
+         <a class="navbar-brand m-0" href="/dashboard/main_dashboard " target="_blank">
              <img src="<?= base_url('assets/kominfo.png') ?>" class="navbar-brand-img h-100" alt="main_logo">
              <span class="ms-1 font-weight-bold">Helpdesk Dashboard</span>
          </a>
@@ -57,7 +57,7 @@
              </li> -->
 
              <li class="nav-item ">
-                 <a class="nav-link  " href="#">
+                 <a class="nav-link  <?= ($activePage === 'email') ? 'active' : '' ?>" href="/dashboard/email_registration">
                      <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
 
                          <img src="<?= base_url('assets/icon/envelope.svg') ?>" alt="">
@@ -74,7 +74,7 @@
                      <span class="nav-link-text ms-1">Subdomain</span>
                  </a>
              </li>
-             <li class="nav-item ">
+             <!-- <li class="nav-item ">
                  <a class="nav-link  " href="#">
                      <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
 
@@ -82,7 +82,7 @@
                      </div>
                      <span class="nav-link-text ms-1">Hak Akses</span>
                  </a>
-             </li>
+             </li> -->
              <li class="nav-item ">
                  <a class="nav-link  <?= ($activePage === 'backup') ? 'active' : '' ?>" href="/dashboard/backup">
                      <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
@@ -93,29 +93,29 @@
                  </a>
              </li>
              <li class="nav-item ">
-                 <a class="nav-link  " href="#">
+                 <a class="nav-link  <?= ($activePage === 'jaringan') ? 'active' : '' ?>" href="/dashboard/jaringan">
                      <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
 
-                         <img src="<?= base_url('assets/icon/envelope.svg') ?>" alt="">
+                         <img src="<?= base_url('assets/icon/celltower.svg') ?>" alt="">
                      </div>
                      <span class="nav-link-text ms-1">Jaringan</span>
                  </a>
              </li>
              <li class="nav-item ">
-                 <a class="nav-link  " href="#">
+                 <a class="nav-link  <?= ($activePage === 'tamu_data_center') ? 'active' : '' ?>" href="/dashboard/tamu_data_center">
                      <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
 
-                         <img src="<?= base_url('assets/icon/envelope.svg') ?>" alt="">
+                         <img src="<?= base_url('assets/icon/groups.svg') ?>" alt="">
                      </div>
                      <span class="nav-link-text ms-1">Tamu Data Center</span>
                  </a>
              </li>
 
              <li class="nav-item ">
-                 <a class="nav-link  " href="#">
+                 <a class="nav-link  <?= ($activePage === 'e_sertifikat') ? 'active' : '' ?>" href="/dashboard/e_sertifikat">
                      <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
 
-                         <img src="<?= base_url('assets/icon/envelope.svg') ?>" alt="">
+                         <img src="<?= base_url('assets/icon/contract.svg') ?>" alt="">
                      </div>
                      <span class="nav-link-text ms-1">Tanda Tangan Elektronik</span>
                  </a>

@@ -44,7 +44,7 @@
                 <p>admin</p>
                 <table class="table table-bordered table-striped mt-4">
                     <thead>
-                        <tr>
+                        <tr class="text-center">
                             <th>Nomor Pengajuan</th>
                             <th>Tanggal Pengajuan</th>
                             <th>Nama OPD</th>
@@ -57,12 +57,12 @@
                             <th>Masalah Sistem</th>
                             <th>Output/Hasil yang Diharapkan</th>
                             <th>Ekspektasi Manfaat</th>
-                            <th>Status</th>
+                            <th>Status Pengajuan</th>
                             <th>Actions</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
+                        <tr class="text-center">
                             <td>643513535</td>
                             <td>2023-10-16</td>
                             <td>OPD A</td>
@@ -88,7 +88,7 @@
                 <p>user</p>
                 <table class="table table-bordered table-striped mt-4">
                     <thead>
-                        <tr>
+                        <tr class="text-center">
                             <th>Nomor Pengajuan</th>
                             <th>Tanggal Pengajuan</th>
                             <th>Nama OPD</th>
@@ -101,12 +101,12 @@
                             <th>Masalah Sistem</th>
                             <th>Output/Hasil yang Diharapkan</th>
                             <th>Ekspektasi Manfaat</th>
-                            <th>Status</th>
+                            <th>Status Pengajuan</th>
                             <th>Actions</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
+                        <tr class="text-center">
                             <td>5464646465</td>
                             <td>2023-10-16</td>
                             <td>OPD A</td>
@@ -124,7 +124,7 @@
                                 <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modal_detail_user">Details</button>
                             </td>
                         </tr>
-                        <tr>
+                        <tr class="text-center">
                             <td>546136515</td>
                             <td>2023-10-16</td>
                             <td>OPD B</td>

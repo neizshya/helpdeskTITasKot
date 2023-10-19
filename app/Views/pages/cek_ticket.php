@@ -19,20 +19,21 @@
 
     <?= view('components/modal_faq') ?>
     <?= view('components/modal_sop') ?>
-
     <div class="d-flex justify-content-center bg-white container mt-3 rounded-5 p-5" style="min-height: 82vh;">
-        <div class="w-50 d-none d-md-block">
-            <div class="input-group ">
-                <input type="text" class="form-control border border-black" placeholder="Masukan nomor ticket" aria-label="Ticket" aria-describedby="button-addon1">
-                <button class="btn btn-outline-primary" type="button" id="button-addon1">Cari ticket</button>
+        <form action="POST" enctype="multipart/form-data">
+            <div class=" w-50 d-none d-md-block">
+                <div class="input-group ">
+                    <input type="text" class="form-control border border-black" placeholder="Masukan nomor ticket" aria-label="Ticket" aria-describedby="button-addon1">
+                    <button class="btn btn-outline-primary" type="button" id="button-addon1">Cari ticket</button>
+                </div>
             </div>
-        </div>
-        <div class="d-block d-md-none">
-            <div class="input-group ">
-                <input type="text" class="form-control border border-black" placeholder="Masukan nomor ticket" aria-label="Ticket" aria-describedby="button-addon1">
-                <button class="btn btn-outline-primary" type="button" id="button-addon1">Cari ticket</button>
+            <div class="d-block d-md-none">
+                <div class="input-group ">
+                    <input type="text" class="form-control border border-black" placeholder="Masukan nomor ticket" aria-label="Ticket" aria-describedby="button-addon1">
+                    <button class="btn btn-outline-primary" type="button" id="button-addon1">Cari ticket</button>
+                </div>
             </div>
-        </div>
+        </form>
     </div>
 
     <?php echo $this->include("layout/footer.php") ?>

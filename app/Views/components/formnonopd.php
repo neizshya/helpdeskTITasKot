@@ -26,13 +26,6 @@
                 </div>
             </div>
         </div>
-        <!-- password -->
-        <div class="col-12 mt-3">
-            <div class="input-group">
-                <span class="input-group-text " id="addon-wrapping"> <img src="<?= base_url('/assets/icon/key.svg') ?>" alt=""></span>
-                <input type="password" class="form-control" data-bs-toggle="tooltip" name="password_input_non" id="password_input_non" data-bs-placement="top" placeholder="Password" aria-label="password" aria-describedby="addon-wrapping" required>
-            </div>
-        </div>
 
         <!-- Nama lengkap -->
 
@@ -58,7 +51,7 @@
         <div class="col-12 mt-3">
             <div class="col-12 ">
                 <label for="berkas" class="form-label fw-bold">Upload Berkas</label>
-                <input class="form-control" type="file" id="berkas" accept=".png, .jpg, .jpeg" required>
+                <input class="form-control" type="file" id="nonktp" accept=".png, .jpg, .jpeg" required>
                 <small><b> Upload KTP (format .png, .jpg, dan .jpeg) </b> serta max 800kb </small>
 
                 <input class="form-control mt-2" type="file" id="surattugas" accept=".pdf" required>
@@ -69,7 +62,7 @@
         <div class="col-12 mt-3">
             <div class="input-group d-flex align-items-center">
                 <!-- Standard button -->
-                <button class="btn btn-danger rounded me-2" type="submit" id="registrasi_ok" disabled>
+                <button class="btn btn-danger rounded me-2" type="submit" id="registrasi_ok">
                     Registrasi
                 </button>
             </div>

@@ -10,7 +10,7 @@
                         <video class="w-100" id="cameraFeed" autoplay playsinline></video>
                     </div>
                     <!--  -->
-                    <form>
+                    <form enctype="multipart/form-data" action="POST">
                         <div class="form-group">
                             <label class="control-label mb-10" for="nama">Nama</label>
                             <input type="text" class="form-control" name="input_nama" id="input_nama" placeholder="Masukkan Nama" required>

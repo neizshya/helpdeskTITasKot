@@ -107,7 +107,7 @@
                     'text' =>
                     'Jaringan',
                     // if logged in can access, if not, showing modal
-                    'attributes' => 'href = "#"'
+                    'attributes' => 'href = "/form/jaringan"'
                 ]) ?>
                 <?= view('components/home_card', [
                     'imageSrc' => '/assets/icon/email.png',
@@ -116,9 +116,7 @@
                     'attributes' => 'href = "/form/pendaftaran_email"',
                 ]) ?>
 
-                <!--  -->
-                <!-- 3 garis terakhir -->
-                <!--  -->
+
             </div>
 
         </div>

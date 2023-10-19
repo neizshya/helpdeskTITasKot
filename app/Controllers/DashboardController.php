@@ -10,6 +10,48 @@ class DashboardController extends BaseController
         $title = 'Dashboard';
         return view('pages/dashboard/maindashboard.php', ['activePage' => $activePage, 'title' => $title]);
     }
+    public function buku_tamu(): string
+    {
+        $activePage = 'tamu_data_center'; // Set this variable to indicate the active 
+        $title = 'Tamu Data Center';
+        return view('pages/dashboard/tamu_data_center.php', ['activePage' => $activePage, 'title' => $title]);
+    }
+    public function email(): string
+    {
+        $activePage = 'email'; // Set this variable to indicate the active 
+        $title = 'Email / Domain';
+        return view('pages/dashboard/email.php', ['activePage' => $activePage, 'title' => $title]);
+    }
+    public function jaringan(): string
+    {
+        $activePage = 'jaringan'; // Set this variable to indicate the active 
+        $title = 'Jaringan';
+        $api_key = 'AIzaSyAWgRbJ2zirzZu-LQeM72OWuVpzdeNYiIU';
+        return view('pages/dashboard/jaringan.php', ['activePage' => $activePage, 'title' => $title, 'api_key' => $api_key]);
+    }
+    public function e_sertifikat(): string
+    {
+        $activePage = 'e_sertifikat'; // Set this variable to indicate the active 
+        $title = 'Tanda Tangan Elektronik';
+        $data = [
+            [
+                'date' => '2023-01-01',
+                'event' => 'Permohonan',
+                'status' => true,
+            ],
+            [
+                'date' => '2023-02-15',
+                'event' => 'Proses',
+                'status' => true,
+            ],
+            [
+                'date' => '2023-02-15',
+                'event' => 'Selesai',
+                'status' => false,
+            ]
+        ];
+        return view('pages/dashboard/e-sertifikat.php', ['activePage' => $activePage, 'title' => $title, 'timeline' => $data]);
+    }
 
     public function layanan_pengembangan(): string
     {

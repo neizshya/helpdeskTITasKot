@@ -4,8 +4,8 @@
 
         <!-- Nik -->
         <div class="col-12 mt-3">
-            <div class="col-12 col-xxl-7">
-                <div class="input-group">
+            <div class="col-12 ">
+                <div class="input-group ">
                     <span class="input-group-text" id="addon-wrapping"> <img src="<?= base_url('/assets/icon/check-square.svg') ?>" alt=""></span>
                     <input type="text" class="form-control" placeholder="Masukan NIK" aria-label="cek_nik" aria-describedby="addon-wrapping" id="nik_input" required>
                 </div>
@@ -88,10 +88,34 @@
             <div class="col-12">
                 <div class="input-group">
                     <span class="input-group-text" id="addon-wrapping"> <img src="<?= base_url('/assets/icon/id-card-solid.svg') ?>" width="17vw" alt=""></span>
-                    <input type="file" class="form-control" id="ktp">
+                    <input type="file" class="form-control" id="nonktp" accept=".png, .jpg, .jpeg">
                 </div>
                 <small>*) Upload Identitas KTP (format png, jpg, jpeg). Max File Size : 800Kb </small>
             </div>
         </div>
-
+        <div class="col-12 mt-3">
+            <p class="small fw-bold">Bermaksud untuk mengajukan permohonan penerbitan Tanda Tangan Elektronik. </p>
+        </div>
+        <div class="col-12 mt-3">
+            <p class="small">
+                Dengan ini saya menyatakan bahwa :
+            </p>
+            <ol class="small fw-bold">
+                <li class="">
+                    <p>Data yang saya isikan di atas adalah benar dan dapat dipertanggungjawabkan, jika di kemudian hari ditemukan bahwa data tersebut adalah tidak benar, maka saya bersedia dikenakan sanksi administrasi dan/atau pidana sesuai dengan ketentuan peraturan perundang-undangan; dan</p>
+                </li>
+                <li>
+                    <p>Bersedia melaksanakan kewajiban Pemilik Tanda Tangan Elektronik.</p>
+                </li>
+            </ol>
+        </div>
+        <!-- button -->
+        <div class="col-12 mt-3">
+            <div class="input-group d-flex align-items-center">
+                <!-- Standard button -->
+                <button class="btn btn-danger rounded me-2" type="submit" id="registrasi_ok">
+                    Registrasi
+                </button>
+            </div>
+        </div>
     </div>

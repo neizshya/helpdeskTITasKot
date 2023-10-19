@@ -27,7 +27,7 @@
                         <div class="col-12 text-center">
                             <p class="fs-3 fw-bold">Verifikasi Dokumen PDF anda</p>
                         </div>
-                        <form id="verificationForm" action="" method="post">
+                        <form id="verificationForm" action="POST" method="post" enctype="multipart/form-data">
                             <div class="col-12">
                                 <div class="mb-3">
                                     <label for="formFile" class="form-label fw-semibold">Upload dokumen yang akan di-verifikasi</label>

@@ -43,16 +43,6 @@
                         <?= view('components/formopdsertifikat') ?>
                         <?= view('components/formnonopdsertifikat') ?>
 
-                        <!-- button -->
-                        <div class="col-12 mt-3">
-                            <div class="input-group d-flex align-items-center">
-                                <!-- Standard button -->
-                                <button class="btn btn-danger rounded me-2" type="submit" id="registrasi_ok" disabled>
-                                    Registrasi
-                                </button>
-                                <small id="klik_cek"> *Klik tombol Cek sebelum registrasi.</small>
-                            </div>
-                        </div>
 
                     </div>
                 </form>
@@ -69,7 +59,65 @@
     <script src="<?= base_url('bs/js/bootstrap.min.js') ?>"></script>
     <script src="<?= base_url('bs/js/main.js') ?>"></script>
     <script src="<?= base_url('bs/js/modal_validation.js') ?>"></script>
+    <script>
+        const pegawaiRadio = document.getElementById("pegawai");
+        const nonpegawaiRadio = document.getElementById("nonpegawai");
+        const opdForm = document.getElementById("opdForm");
+        const nonOpdForm = document.getElementById("nonOpdForm");
 
+        pegawaiRadio.addEventListener("change", () => {
+            if (pegawaiRadio.checked) {
+                opdForm.classList.remove("d-none");
+                nonOpdForm.classList.add("d-none");
+            }
+        });
+
+        nonpegawaiRadio.addEventListener("change", () => {
+            if (nonpegawaiRadio.checked) {
+                nonOpdForm.classList.remove("d-none");
+                opdForm.classList.add("d-none");
+            }
+        });
+    </script>
+    <script>
+        const ktp = document.getElementById('ktp')
+        const nonktp = document.getElementById('nonktp')
+        const surattugas = document.getElementById('surattugas')
+
+        nonktp.addEventListener('change', (event) => {
+            const target = event.target
+            if (target.files && target.files[0]) {
+
+                const maxAllowedSize = 800 * 1024; // 800KB
+                if (target.files[0].size > maxAllowedSize) {
+                    alert("Foto melebihi batas maksimal yang dapat diterima")
+                    target.value = ''
+                }
+            }
+        })
+        ktp.addEventListener('change', (event) => {
+            const target = event.target
+            if (target.files && target.files[0]) {
+
+                const maxAllowedSize = 800 * 1024; // 800KB
+                if (target.files[0].size > maxAllowedSize) {
+                    alert("Foto melebihi batas maksimal yang dapat diterima")
+                    target.value = ''
+                }
+            }
+        })
+        surattugas.addEventListener('change', (event) => {
+            const target = event.target
+            if (target.files && target.files[0]) {
+
+                const maxAllowedSize = 800 * 1024; // 800KB
+                if (target.files[0].size > maxAllowedSize) {
+                    alert("PDF melebihi batas maksimal yang dapat diterima")
+                    target.value = ''
+                }
+            }
+        })
+    </script>
     <script>
         const tooltipTriggerList = document.querySelectorAll(
             '[data-bs-toggle="tooltip"]'
