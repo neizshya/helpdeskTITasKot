@@ -39,36 +39,41 @@
         <div class="container-fluid py-4">
             <div style=" min-height:80vh;max-width: 100%;overflow-x: auto;">
                 <p>admin only</p>
-                <table class="table table-bordered table-striped mt-4 ">
-                    <thead>
-                        <tr class="text-center">
-                            <th>Nama Tamu</th>
-                            <th>NIK</th>
-                            <th>OPD/Instansi</th>
-                            <th>Jenis Server</th>
-                            <th>Keterangan</th>
-                            <th>Foto</th>
-                            <th>Status Pengajuan</th>
-                            <th>Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="text-center align-content-center">
-                            <td>567413654</td>
-                            <td>2023-10-16</td>
-                            <td>6445531335</td>
-                            <td>OPD A</td>
-                            <td>Keterangan A</td>
-                            <td><img src="https://avatars.akamai.steamstatic.com/fab9f6e14530bb7ab8f259edfab656b97d6111e2_full.jpg" alt="" style="max-width:10vw;max-height:25vh"></td>
-                            <!-- <td><img src="https://cdn.pixabay.com/photo/2016/03/23/04/01/woman-1274056_1280.jpg" alt="" style="max-width:10vw;max-height:25vh"></td> -->
-                            <td>Divalidasi</td>
-                            <td>
-                                <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modal_subdomain_detail_admin">Details</button>
-                            </td>
-                        </tr>
-                        <!-- Add more rows as needed -->
-                    </tbody>
-                </table>
+                <div class="card mb-4">
+                    <div class="card-body px-0 pt-0 pb-2">
+                        <div class="table-responsive p-3">
+                            <table class="table table  align-items-center mb-0">
+                                <thead>
+                                    <tr class="text-center">
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nama Tamu</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">NIK</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">OPD/Instansi</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Jenis Server</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Keterangan</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Foto</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="text-center align-content-center">
+                                        <td class="align-middle text-center text-sm">567413654</td>
+                                        <td class="align-middle text-center text-sm">2023-10-16</td>
+                                        <td class="align-middle text-center text-sm">6445531335</td>
+                                        <td class="align-middle text-center text-sm">OPD A</td>
+                                        <td class="align-middle text-center text-sm">Keterangan A</td>
+                                        <td class="align-middle text-center text-sm"><img src="https://avatars.akamai.steamstatic.com/fab9f6e14530bb7ab8f259edfab656b97d6111e2_full.jpg" alt="" style="max-width:10vw;max-height:25vh"></td>
+                                        <!-- <td><img src="https://cdn.pixabay.com/photo/2016/03/23/04/01/woman-1274056_1280.jpg" alt="" style="max-width:10vw;max-height:25vh"></td> -->
+                                        <td class="align-middle text-center text-sm">
+                                            <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modal_subdomain_detail_admin">Details</button>
+                                        </td>
+                                    </tr>
+                                    <!-- Add more rows as needed -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </main>

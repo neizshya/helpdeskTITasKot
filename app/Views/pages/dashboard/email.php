@@ -41,45 +41,51 @@
         <div class="container-fluid py-4">
             <div style=" min-height:80vh;max-width: 100%;overflow-x: auto;">
                 <p>admin only</p>
-                <table class="table table-bordered table-striped mt-4 ">
-                    <thead>
-                        <tr class="text-center">
 
-                            <th>Nomor Pengajuan</th>
-                            <th>Tipe</th>
-                            <th>Organisasi/OPD/Desa</th>
-                            <th>Email Lain Pendaftar</th>
-                            <th>Email Ajuan</th>
-                            <th>Nama Lengkap</th>
-                            <th>Nomor HP</th>
-                            <th>Foto KTP</th>
-                            <th>Foto Surat Tugas</th>
-                            <th>Status Pengajuan</th>
-                            <th>Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="text-center align-content-center">
-                            <td>567413654</td>
-                            <td>pegawai/opd</td>
-                            <td>OPD A</td>
-                            <td>something@gmail.com</td>
-                            <td>something@tasikmalaya.go.id</td>
-                            <td>nama lengkap A</td>
-                            <td>Nomor hp A</td>
-                            <td><img src="https://avatars.akamai.steamstatic.com/fab9f6e14530bb7ab8f259edfab656b97d6111e2_full.jpg" alt="" style="max-width:10vw;max-height:25vh"></td>
-                            <td><img src="https://avatars.akamai.steamstatic.com/fab9f6e14530bb7ab8f259edfab656b97d6111e2_full.jpg" alt="" style="max-width:10vw;max-height:25vh"></td>
-                            <td>Divalidasi</td>
-                            <!-- <td><img src="https://cdn.pixabay.com/photo/2016/03/23/04/01/woman-1274056_1280.jpg" alt="" style="max-width:10vw;max-height:25vh"></td> -->
-                            <td>
-                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal_email_validasi">Validasi</button>
-                                <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal_email_tolak">Tolak</button>
-                                <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modal_email_detail_admin">Details</button>
-                            </td>
-                        </tr>
-                        <!-- Add more rows as needed -->
-                    </tbody>
-                </table>
+                <div class="card mb-4">
+                    <div class="card-body px-0 pt-0 pb-2">
+                        <div class="table-responsive p-3">
+                            <table class="table table  align-items-center mb-0">
+                                <thead>
+                                    <tr class="text-center">
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nomor Pengajuan</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Tipe</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Organisasi/OPD/Desa</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Email Lain Pendaftar</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Email Ajuan</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nama Lengkap</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nomor HP</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Foto KTP</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Foto Surat Tugas</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Status Pengajuan</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="text-center align-content-center">
+                                        <td class="align-middle text-center text-sm">567413654</td>
+                                        <td class="align-middle text-center text-sm">pegawai/opd</td>
+                                        <td class="align-middle text-center text-sm">OPD A</td>
+                                        <td class="align-middle text-center text-sm">something@gmail.com</td>
+                                        <td class="align-middle text-center text-sm">something@tasikmalaya.go.id</td>
+                                        <td class="align-middle text-center text-sm">nama lengkap A</td>
+                                        <td class="align-middle text-center text-sm">Nomor hp A</td>
+                                        <td class="align-middle text-center text-sm"><img src="https://avatars.akamai.steamstatic.com/fab9f6e14530bb7ab8f259edfab656b97d6111e2_full.jpg" alt="" style="max-width:10vw;max-height:25vh"></td>
+                                        <td class="align-middle text-center text-sm"><img src="https://avatars.akamai.steamstatic.com/fab9f6e14530bb7ab8f259edfab656b97d6111e2_full.jpg" alt="" style="max-width:10vw;max-height:25vh"></td>
+                                        <td class="align-middle text-center text-sm"><span class="badge badge-sm bg-gradient-success">Divalidasi</span></td>
+                                        <!-- <td><img src="https://cdn.pixabay.com/photo/2016/03/23/04/01/woman-1274056_1280.jpg" alt="" style="max-width:10vw;max-height:25vh"></td> -->
+                                        <td>
+                                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal_email_validasi">Validasi</button>
+                                            <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal_email_tolak">Tolak</button>
+                                            <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modal_email_detail_admin">Details</button>
+                                        </td>
+                                    </tr>
+                                    <!-- Add more rows as needed -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>

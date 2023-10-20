@@ -42,109 +42,123 @@
         <div class="container-fluid py-4">
             <div style=" min-height:80vh;max-width: 100%;overflow-x: auto;">
                 <p>admin</p>
-                <table class="table table-bordered table-striped mt-4">
-                    <thead>
-                        <tr class="text-center">
-                            <th>Nomor Pengajuan</th>
-                            <th>Tanggal Pengajuan</th>
-                            <th>Nama OPD</th>
-                            <th>Nama Sistem</th>
-                            <th>Nama Pengaju</th>
-                            <th>Nama Kasie</th>
-                            <th>Nama Kabid</th>
-                            <th>Jenis</th>
-                            <th>Rencana Kerja</th>
-                            <th>Masalah Sistem</th>
-                            <th>Output/Hasil yang Diharapkan</th>
-                            <th>Ekspektasi Manfaat</th>
-                            <th>Status Pengajuan</th>
-                            <th>Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="text-center">
-                            <td>643513535</td>
-                            <td>2023-10-16</td>
-                            <td>OPD A</td>
-                            <td>Sistem A</td>
-                            <td>John Doe</td>
-                            <td>Jane Smith</td>
-                            <td>Michael Johnson</td>
-                            <td>Sistem Baru</td>
-                            <td>Rencana Kerja</td>
-                            <td>Masalah Sistem</td>
-                            <td>Output/Hasil</td>
-                            <td>Ekspektasi Manfaat</td>
-                            <td>Diterima</td>
-                            <td>
-                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal_validasi">Validasi</button>
-                                <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal_tolak">Tolak</button>
-                                <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modal_detail_admin">Details</button>
-                            </td>
-                        </tr>
-                        <!-- Add more rows as needed -->
-                    </tbody>
-                </table>
+
+                <div class="card mb-4">
+                    <div class="card-body px-0 pt-0 pb-2">
+                        <div class="table-responsive p-3">
+                            <table class="table  align-items-center mb-0">
+                                <thead>
+                                    <tr class="text-center">
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nomor Pengajuan</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Tanggal Pengajuan</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nama OPD</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nama Sistem</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nama Pengaju</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nama Kasie</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nama Kabid</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Jenis</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Rencana Kerja</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Masalah Sistem</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Output/Hasil yang Diharapkan</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Ekspektasi Manfaat</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Status Pengajuan</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="text-center">
+                                        <td class="align-middle text-center text-sm">643513535</td>
+                                        <td class="align-middle text-center text-sm">2023-10-16</td>
+                                        <td class="align-middle text-center text-sm">OPD A</td>
+                                        <td class="align-middle text-center text-sm">Sistem A</td>
+                                        <td class="align-middle text-center text-sm">John Doe</td>
+                                        <td class="align-middle text-center text-sm">Jane Smith</td>
+                                        <td class="align-middle text-center text-sm">Michael Johnson</td>
+                                        <td class="align-middle text-center text-sm">Sistem Baru</td>
+                                        <td class="align-middle text-center text-sm">Rencana Kerja</td>
+                                        <td class="align-middle text-center text-sm">Masalah Sistem</td>
+                                        <td class="align-middle text-center text-sm">Output/Hasil</td>
+                                        <td class="align-middle text-center text-sm">Ekspektasi Manfaat</td>
+                                        <td class="align-middle text-center text-sm"><span class="badge badge-sm bg-gradient-success">divalidasi</span></td>
+                                        <td class="align-middle text-center text-sm">
+                                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal_validasi">Validasi</button>
+                                            <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal_tolak">Tolak</button>
+                                            <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modal_detail_admin">Details</button>
+                                        </td>
+                                    </tr>
+                                    <!-- Add more rows as needed -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
                 <p>user</p>
-                <table class="table table-bordered table-striped mt-4">
-                    <thead>
-                        <tr class="text-center">
-                            <th>Nomor Pengajuan</th>
-                            <th>Tanggal Pengajuan</th>
-                            <th>Nama OPD</th>
-                            <th>Nama Sistem</th>
-                            <th>Nama Pengaju</th>
-                            <th>Nama Kasie</th>
-                            <th>Nama Kabid</th>
-                            <th>Jenis</th>
-                            <th>Rencana Kerja</th>
-                            <th>Masalah Sistem</th>
-                            <th>Output/Hasil yang Diharapkan</th>
-                            <th>Ekspektasi Manfaat</th>
-                            <th>Status Pengajuan</th>
-                            <th>Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="text-center">
-                            <td>5464646465</td>
-                            <td>2023-10-16</td>
-                            <td>OPD A</td>
-                            <td>Sistem A</td>
-                            <td>John Doe</td>
-                            <td>Jane Smith</td>
-                            <td>Michael Johnson</td>
-                            <td>Sistem Baru</td>
-                            <td>Rencana Kerja</td>
-                            <td>Masalah Sistem</td>
-                            <td>Output/Hasil</td>
-                            <td>Ekspektasi Manfaat</td>
-                            <td>Diterima</td>
-                            <td>
-                                <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modal_detail_user">Details</button>
-                            </td>
-                        </tr>
-                        <tr class="text-center">
-                            <td>546136515</td>
-                            <td>2023-10-16</td>
-                            <td>OPD B</td>
-                            <td>Sistem A</td>
-                            <td>John Doe</td>
-                            <td>Jane Smith</td>
-                            <td>Michael Johnson</td>
-                            <td>Sistem Baru</td>
-                            <td>Rencana Kerja</td>
-                            <td>Masalah Sistem</td>
-                            <td>Output/Hasil</td>
-                            <td>Ekspektasi Manfaat</td>
-                            <td>Ditolak</td>
-                            <td>
-                                <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modal_details">Details</button>
-                            </td>
-                        </tr>
-                        <!-- Add more rows as needed -->
-                    </tbody>
-                </table>
+                <div class="card mb-4">
+                    <div class="card-body px-0 pt-0 pb-2">
+                        <div class="table-responsive p-3">
+                            <table class="table table  align-items-center mb-0">
+                                <thead>
+                                    <tr class="text-center">
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nomor Pengajuan</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Tanggal Pengajuan</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nama OPD</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nama Sistem</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nama Pengaju</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nama Kasie</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nama Kabid</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Jenis</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Rencana Kerja</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Masalah Sistem</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Output/Hasil yang Diharapkan</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Ekspektasi Manfaat</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Status Pengajuan</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="text-center">
+                                        <td class="align-middle text-center text-sm">5464646465</td>
+                                        <td class="align-middle text-center text-sm">2023-10-16</td>
+                                        <td class="align-middle text-center text-sm">OPD A</td>
+                                        <td class="align-middle text-center text-sm">Sistem A</td>
+                                        <td class="align-middle text-center text-sm">John Doe</td>
+                                        <td class="align-middle text-center text-sm">Jane Smith</td>
+                                        <td class="align-middle text-center text-sm">Michael Johnson</td>
+                                        <td class="align-middle text-center text-sm">Sistem Baru</td>
+                                        <td class="align-middle text-center text-sm">Rencana Kerja</td>
+                                        <td class="align-middle text-center text-sm">Masalah Sistem</td>
+                                        <td class="align-middle text-center text-sm">Output/Hasil</td>
+                                        <td class="align-middle text-center text-sm">Ekspektasi Manfaat</td>
+                                        <td class="align-middle text-center text-sm"><span class="badge badge-sm bg-gradient-success">divalidasi</span></td>
+                                        <td class="align-middle text-center text-sm">
+                                            <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modal_detail_user">Details</button>
+                                        </td>
+                                    </tr>
+                                    <tr class="text-center">
+                                        <td class="align-middle text-center text-sm">546136515</td>
+                                        <td class="align-middle text-center text-sm">2023-10-16</td>
+                                        <td class="align-middle text-center text-sm">OPD B</td>
+                                        <td class="align-middle text-center text-sm">Sistem A</td>
+                                        <td class="align-middle text-center text-sm">John Doe</td>
+                                        <td class="align-middle text-center text-sm">Jane Smith</td>
+                                        <td class="align-middle text-center text-sm">Michael Johnson</td>
+                                        <td class="align-middle text-center text-sm">Sistem Baru</td>
+                                        <td class="align-middle text-center text-sm">Rencana Kerja</td>
+                                        <td class="align-middle text-center text-sm">Masalah Sistem</td>
+                                        <td class="align-middle text-center text-sm">Output/Hasil</td>
+                                        <td class="align-middle text-center text-sm">Ekspektasi Manfaat</td>
+                                        <td class="align-middle text-center text-sm"><span class="badge badge-sm bg-gradient-danger">Ditolak</span></td>
+                                        <td class="align-middle text-center text-sm">
+                                            <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modal_details">Details</button>
+                                        </td>
+                                    </tr>
+                                    <!-- Add more rows as needed -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </main>

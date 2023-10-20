@@ -39,8 +39,12 @@
         <?= view('components/dashboard/modal_email_detail_admin') ?>
         <!-- End Navbar -->
         <div class="container-fluid py-4">
-            <div style=" min-height:80vh;max-width: 100%;overflow-x: auto;">
-                <div id="map" style="height: 85vh;"></div>
+            <div style=" min-height:80vh; max-width: 100%;overflow-x: auto;">
+                <div class="card">
+                    <div class="card-body">
+                        <div id="map" style="height: 80vh;"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
@@ -85,7 +89,8 @@
                 namaOPD: "OPD 3",
                 alamatOPD: "Address 3",
                 fotoBerkas: "https://avatars.akamai.steamstatic.com/fab9f6e14530bb7ab8f259edfab656b97d6111e2_full.jpg",
-                keterangan: "Description 3"
+                keterangan: "Description 3",
+                status: "true"
             },
             // Add more data for other markers here
         ];
@@ -111,13 +116,17 @@
 
                 var infoWindow = new google.maps.InfoWindow({
                     content: `
+                  <div class="p-3" style:"min-width:50vw">
+                    <strong>Status:</strong> ${data.status ? 'Belum Selesai':'Selesai'}<br><br>
                         <strong>Tanggal Pelaporan:</strong> ${data.tanggalPelaporan}<br><br>
                         <strong>NIP:</strong> ${data.NIP}<br><br>
                         <strong>Nama OPD:</strong> ${data.namaOPD}<br><br>
                         <strong>Alamat OPD:</strong> ${data.alamatOPD}<br><br>
                         <strong>Keterangan:</strong> ${data.keterangan}<br><br>
-                        <img src="${data.fotoBerkas}"  style="max-width:15vw">
-                        <strong> lat : 
+                        <strong> lat : </strong> ${data.lat} <strong> lng : </strong>${data.lng} <br><br>
+                        <img src="${data.fotoBerkas}"  style="max-width:15vw"><br><br>
+                        <button class="btn btn-success w-100">Selesaikan</button>
+                        </div>
                     `
                 });
 

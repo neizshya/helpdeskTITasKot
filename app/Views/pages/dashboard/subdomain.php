@@ -42,104 +42,120 @@
         <div class="container-fluid py-4">
             <div style=" min-height:80vh;max-width: 100%;overflow-x: auto;">
                 <p>admin</p>
-                <table class="table table-bordered table-striped mt-4 ">
-                    <thead>
-                        <tr class="text-center">
-                            <th>Nomor Pengajuan</th>
-                            <th>Tanggal Pengajuan</th>
-                            <th>NIP</th>
-                            <th>Nama OPD</th>
-                            <th>Nama Penanggung Jawab</th>
-                            <th>Nomor Kontak</th>
-                            <th>Email</th>
-                            <th>Alamat OPD</th>
-                            <th>Nama Subdomain</th>
-                            <th>Lokasi Server</th>
-                            <th>Keterangan</th>
-                            <th>Status Pengajuan</th>
-                            <th>Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="text-center">
-                            <td>567413654</td>
-                            <td>2023-10-16</td>
-                            <td>6445531335</td>
-                            <td>OPD A</td>
-                            <td>John Doe</td>
-                            <td>4435313553</td>
-                            <td>jodn@mail.tasikmalayakota.go.id</td>
-                            <td>alamat OPD A</td>
-                            <td>Subdomain</td>
-                            <td>server OPD</td>
-                            <td>Keterangan A</td>
-                            <td>Diterima</td>
-                            <td>
-                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal_subdomain_validasi">Validasi</button>
-                                <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal_subdomain_tolak">Tolak</button>
-                                <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modal_subdomain_detail_admin">Details</button>
-                            </td>
-                        </tr>
-                        <!-- Add more rows as needed -->
-                    </tbody>
-                </table>
+
+                <div class="card mb-4">
+                    <div class="card-body px-0 pt-0 pb-2">
+                        <div class="table-responsive p-3">
+
+                            <table class="table table  align-items-center mb-0">
+                                <thead>
+                                    <tr class="text-center">
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nomor Pengajuan</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Tanggal Pengajuan</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">NIP</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nama OPD</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nama Penanggung Jawab</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nomor Kontak</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Email</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Alamat OPD</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nama Subdomain</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Lokasi Server</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Keterangan</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Status Pengajuan</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="text-center">
+                                        <td class="align-middle text-center text-sm">567413654</td>
+                                        <td class="align-middle text-center text-sm">2023-10-16</td>
+                                        <td class="align-middle text-center text-sm">6445531335</td>
+                                        <td class="align-middle text-center text-sm">OPD A</td>
+                                        <td class="align-middle text-center text-sm">John Doe</td>
+                                        <td class="align-middle text-center text-sm">4435313553</td>
+                                        <td class="align-middle text-center text-sm">jodn@mail.tasikmalayakota.go.id</td>
+                                        <td class="align-middle text-center text-sm">alamat OPD A</td>
+                                        <td class="align-middle text-center text-sm">Subdomain</td>
+                                        <td class="align-middle text-center text-sm">server OPD</td>
+                                        <td class="align-middle text-center text-sm">Keterangan A</td>
+                                        <td class="align-middle text-center text-sm"><span class="badge badge-sm bg-gradient-success">Diterima</span></td>
+                                        <td class="align-middle text-center text-sm">
+                                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal_subdomain_validasi">Validasi</button>
+                                            <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal_subdomain_tolak">Tolak</button>
+                                            <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modal_subdomain_detail_admin">Details</button>
+                                        </td>
+                                    </tr>
+                                    <!-- Add more rows as needed -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
                 <p>user</p>
-                <table class="table table-bordered table-striped mt-4">
-                    <thead>
-                        <tr class="text-center">
-                            <th>Nomor Pengajuan</th>
-                            <th>Tanggal Pengajuan</th>
-                            <th>NIP</th>
-                            <th>Nama OPD</th>
-                            <th>Nama Penanggung Jawab</th>
-                            <th>Nomor Kontak</th>
-                            <th>Email</th>
-                            <th>Alamat OPD</th>
-                            <th>Nama Subdomain</th>
-                            <th>Lokasi Server</th>
-                            <th>Keterangan</th>
-                            <th>Status Pengajuan</th>
-                            <th>Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="text-center">
-                            <td>6543133134</td>
-                            <td>2023-10-16</td>
-                            <td>6445531335</td>
-                            <td>OPD A</td>
-                            <td>John Doe</td>
-                            <td>4435313553</td>
-                            <td>jodn@mail.tasikmalayakota.go.id</td>
-                            <td>alamat OPD A</td>
-                            <td>Subdomain</td>
-                            <td>server OPD</td>
-                            <td>Keterangan A</td>
-                            <td>Diterima</td>
-                            <td>
-                                <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modal_subdomain_detail_user">Details</button>
-                            </td>
-                        </tr>
-                        <tr class="text-center">
-                            <td>56541561544</td>
-                            <td>2023-10-16</td>
-                            <td>6445531335</td>
-                            <td>OPD A</td>
-                            <td>John Doe</td>
-                            <td>4435313553</td>
-                            <td>jodn@mail.tasikmalayakota.go.id</td>
-                            <td>alamat OPD A</td>
-                            <td>Subdomain</td>
-                            <td>server OPD</td>
-                            <td>Keterangan A</td>
-                            <td>Ditolak</td>
-                            <td>
-                                <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modal_details">Details</button>
-                            </td>
-                        </tr>
-                        <!-- Add more rows as needed -->
-                    </tbody>
-                </table>
+
+                <div class="card mb-4">
+                    <div class="card-body px-0 pt-0 pb-2">
+                        <div class="table-responsive p-3">
+
+                            <table class="table table  align-items-center mb-0">
+                                <thead>
+                                    <tr class="text-center">
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nomor Pengajuan</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Tanggal Pengajuan</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">NIP</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nama OPD</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nama Penanggung Jawab</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nomor Kontak</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Email</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Alamat OPD</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nama Subdomain</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Lokasi Server</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Keterangan</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Status Pengajuan</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="text-center">
+                                        <td class="align-middle text-center text-sm">6543133134</td>
+                                        <td class="align-middle text-center text-sm">2023-10-16</td>
+                                        <td class="align-middle text-center text-sm">6445531335</td>
+                                        <td class="align-middle text-center text-sm">OPD A</td>
+                                        <td class="align-middle text-center text-sm">John Doe</td>
+                                        <td class="align-middle text-center text-sm">4435313553</td>
+                                        <td class="align-middle text-center text-sm">jodn@mail.tasikmalayakota.go.id</td>
+                                        <td class="align-middle text-center text-sm">alamat OPD A</td>
+                                        <td class="align-middle text-center text-sm">Subdomain</td>
+                                        <td class="align-middle text-center text-sm">server OPD</td>
+                                        <td class="align-middle text-center text-sm">Keterangan A</td>
+                                        <td class="align-middle text-center text-sm"><span class="badge badge-sm bg-gradient-success">Diterima</span></td>
+                                        <td class="align-middle text-center text-sm">
+                                            <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modal_subdomain_detail_user">Details</button>
+                                        </td>
+                                    </tr>
+                                    <tr class="text-center">
+                                        <td class="align-middle text-center text-sm">56541561544</td>
+                                        <td class="align-middle text-center text-sm">2023-10-16</td>
+                                        <td class="align-middle text-center text-sm">6445531335</td>
+                                        <td class="align-middle text-center text-sm">OPD A</td>
+                                        <td class="align-middle text-center text-sm">John Doe</td>
+                                        <td class="align-middle text-center text-sm">4435313553</td>
+                                        <td class="align-middle text-center text-sm">jodn@mail.tasikmalayakota.go.id</td>
+                                        <td class="align-middle text-center text-sm">alamat OPD A</td>
+                                        <td class="align-middle text-center text-sm">Subdomain</td>
+                                        <td class="align-middle text-center text-sm">server OPD</td>
+                                        <td class="align-middle text-center text-sm">Keterangan A</td>
+                                        <td class="align-middle text-center text-sm"> <span class="badge badge-sm bg-gradient-danger">Ditolak</span></td>
+                                        <td class="align-middle text-center text-sm">
+                                            <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modal_details">Details</button>
+                                        </td>
+                                    </tr>
+                                    <!-- Add more rows as needed -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
