@@ -25,3 +25,4 @@ $routes->get('/dashboard/tamu_data_center', 'DashboardController::buku_tamu');
 $routes->get('/dashboard/email_registration', 'DashboardController::email');
 $routes->get('/dashboard/e_sertifikat', 'DashboardController::e_sertifikat');
 $routes->get('/dashboard/jaringan', 'DashboardController::jaringan');
+$routes->get('/dashboard/akun', 'DashboardController::akun_saya');

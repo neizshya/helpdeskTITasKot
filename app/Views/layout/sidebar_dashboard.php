@@ -122,7 +122,5 @@
              </li>
          </ul>
      </div>
-     <div class="sidenav-footer mt-5 mx-3">
-         <a class="btn bg-gradient-primary mt-5 w-100" href="/">Logout</a>
-     </div>
+
  </aside>

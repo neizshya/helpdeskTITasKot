@@ -29,6 +29,12 @@ class DashboardController extends BaseController
         $api_key = 'AIzaSyAWgRbJ2zirzZu-LQeM72OWuVpzdeNYiIU';
         return view('pages/dashboard/jaringan.php', ['activePage' => $activePage, 'title' => $title, 'api_key' => $api_key]);
     }
+    public function akun_saya(): string
+    {
+        $activePage = 'akun'; // Set this variable to indicate the active 
+        $title = 'Akun Saya';
+        return view('pages/dashboard/user_detail.php', ['activePage' => $activePage, 'title' => $title]);
+    }
     public function e_sertifikat(): string
     {
         $activePage = 'e_sertifikat'; // Set this variable to indicate the active 

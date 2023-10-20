@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="/assets/logo_tasik.svg">
     <!-- STYLES -->
-    <link rel="stylesheet" href="<?= base_url('Modernize/src/assets/css/styles.min.css') ?>" />
     <link rel="stylesheet" href="<?= base_url('bs/css/bootstrap.min.css') ?>">
     <link rel="stylesheet" href="<?= base_url('bs/css/style.css') ?>">
     <!--     Fonts and icons     -->
@@ -16,6 +15,7 @@
     <!-- Nucleo Icons -->
     <link href="<?= base_url('soft/assets/css/nucleo-icons.css') ?>" rel="stylesheet" />
     <link href="<?= base_url('soft/assets/css/nucleo-svg.css') ?>" rel="stylesheet" />
+    <link rel="stylesheet" href="<?= base_url('bs/css/nav.css') ?>">
     <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
     <link href="<?= base_url('soft/assets/css/nucleo-svg.css') ?>" rel="stylesheet" />
@@ -141,7 +141,7 @@
     <script src="<?= base_url('soft/assets/js/plugins/perfect-scrollbar.min.js') ?>"></script>
     <script src="<?= base_url('soft/assets/js/plugins/smooth-scrollbar.min.js') ?>"></script>
     <script src="<?= base_url('soft/assets/js/plugins/chartjs.min.js') ?>"></script>
-    <script>
+    <!-- <script>
         var ctx = document.getElementById("chart-bars").getContext("2d");
 
         new Chart(ctx, {
@@ -215,13 +215,13 @@
 
         gradientStroke1.addColorStop(1, 'rgba(203,12,159,0.2)');
         gradientStroke1.addColorStop(0.2, 'rgba(72,72,176,0.0)');
-        gradientStroke1.addColorStop(0, 'rgba(203,12,159,0)'); //purple colors
+        gradientStroke1.addColorStop(0, 'rgba(203,12,159,0)');
 
         var gradientStroke2 = ctx2.createLinearGradient(0, 230, 0, 50);
 
         gradientStroke2.addColorStop(1, 'rgba(20,23,39,0.2)');
         gradientStroke2.addColorStop(0.2, 'rgba(72,72,176,0.0)');
-        gradientStroke2.addColorStop(0, 'rgba(20,23,39,0)'); //purple colors
+        gradientStroke2.addColorStop(0, 'rgba(20,23,39,0)');
 
         new Chart(ctx2, {
             type: "line",
@@ -310,7 +310,7 @@
                 },
             },
         });
-    </script>
+    </script> -->
     <script>
         var win = navigator.platform.indexOf('Win') > -1;
         if (win && document.querySelector('#sidenav-scrollbar')) {

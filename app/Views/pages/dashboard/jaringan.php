@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="<?= base_url('bs/css/bootstrap.min.css') ?>">
     <link rel="stylesheet" href="<?= base_url('bs/css/style.css') ?>">
     <link rel="stylesheet" href="<?= base_url('assets/main.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('bs/css/nav.css') ?>">
     <!--     Fonts and icons     -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
     <!-- Nucleo Icons -->

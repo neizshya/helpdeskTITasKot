@@ -22491,15 +22491,7 @@ html {
     color: #344767;
   }
 
-  .g-sidenav-show .navbar:not(.sidenav).navbar-main .navbar-collapse {
-    display: flex !important;
-    flex-basis: auto;
-  }
-
-  .g-sidenav-show .navbar:not(.sidenav).navbar-main .navbar-nav {
-    flex-direction: row;
-  }
-
+ 
   .navbar.navbar-transparent .navbar-collapse {
     box-shadow: 0 8px 26px -4px rgba(20, 20, 20, 0.15), 0 8px 9px -5px rgba(20, 20, 20, 0.06);
   }
@@ -23340,17 +23332,6 @@ html {
   fill: #fff;
 }
 
-.navbar-main {
-  transition: box-shadow 0.25s ease-in, background-color 0.25s ease-in;
-}
-
-.navbar-main.fixed-top {
-  width: calc(100% - (15.625rem + 1.5rem * 3));
-}
-
-.navbar-main.fixed-top+[class*="container"] {
-  margin-top: 7.1875rem !important;
-}
 
 .navbar-vertical .navbar-nav .nav-link[data-bs-toggle="collapse"]:after {
   display: inline-block;
