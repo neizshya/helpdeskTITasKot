@@ -34,10 +34,10 @@
         <?php echo $this->include("layout/navbar_dashboard.php") ?>
 
         <!-- End Navbar -->
-        <div class="container-fluid py-4">
-            <div class="row">
+        <div class="container-fluid py-4" style=" min-height:80vh;max-width: 100%;overflow-x: auto;">
+            <div class="row ">
                 <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
-                    <div class="card" style="max-width: 20vw; max-height:15vh">
+                    <div class="card">
                         <div class="card-body p-3">
                             <div class="row">
                                 <div class="col-8">
@@ -60,7 +60,7 @@
                     </div>
                 </div>
                 <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
-                    <div class="card" style="max-width: 20vw; max-height:15vh">
+                    <div class="card">
                         <div class="card-body p-3">
                             <div class="row">
                                 <div class="col-8">
@@ -82,9 +82,8 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
-                    <div class="card" style="max-width: 20vw; max-height:15vh">
+                    <div class="card">
                         <div class="card-body p-3">
                             <div class="row">
                                 <div class="col-8">
@@ -107,7 +106,7 @@
                     </div>
                 </div>
                 <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
-                    <div class="card" style="max-width: 20vw; max-height:15vh">
+                    <div class="card">
                         <div class="card-body p-3">
                             <div class="row">
                                 <div class="col-8">

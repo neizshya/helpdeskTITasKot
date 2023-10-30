@@ -61,8 +61,8 @@
                                         <td class="align-middle text-center text-sm">6445531335</td>
                                         <td class="align-middle text-center text-sm">OPD A</td>
                                         <td class="align-middle text-center text-sm">Keterangan A</td>
-                                        <td class="align-middle text-center text-sm"><img src="https://avatars.akamai.steamstatic.com/fab9f6e14530bb7ab8f259edfab656b97d6111e2_full.jpg" alt="" style="max-width:10vw;max-height:25vh"></td>
-                                        <!-- <td><img src="https://cdn.pixabay.com/photo/2016/03/23/04/01/woman-1274056_1280.jpg" alt="" style="max-width:10vw;max-height:25vh"></td> -->
+                                        <!-- <td class="align-middle text-center text-sm"><img src="https://avatars.akamai.steamstatic.com/fab9f6e14530bb7ab8f259edfab656b97d6111e2_full.jpg" alt="" style="max-width:10vw;max-height:25vh"></td> -->
+                                        <td class="align-middle text-center text-sm"><img src="https://cdn.pixabay.com/photo/2016/03/23/04/01/woman-1274056_1280.jpg" alt="" style="max-width:10vw;max-height:25vh"></td>
                                         <td class="align-middle text-center text-sm">
                                             <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modal_subdomain_detail_admin">Details</button>
                                         </td>

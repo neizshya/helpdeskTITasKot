@@ -7,23 +7,16 @@
     <meta name="description" content="The small framework with powerful features">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="/assets/logo_tasik.svg">
-    <!-- STYLES -->
     <link rel="stylesheet" href="<?= base_url('bs/css/bootstrap.min.css') ?>">
     <link rel="stylesheet" href="<?= base_url('bs/css/style.css') ?>">
     <link rel="stylesheet" href="<?= base_url('assets/main.css') ?>">
     <link rel="stylesheet" href="<?= base_url('bs/css/nav.css') ?>">
-    <!--     Fonts and icons     -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
-    <!-- Nucleo Icons -->
     <link href="<?= base_url('soft/assets/css/nucleo-icons.css') ?>" rel="stylesheet" />
     <link href="<?= base_url('soft/assets/css/nucleo-svg.css') ?>" rel="stylesheet" />
-    <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
     <link href="<?= base_url('soft/assets/css/nucleo-svg.css') ?>" rel="stylesheet" />
-    <!-- CSS Files -->
     <link href="<?= base_url('soft/assets/css/soft-ui-dashboard.css?v=1.0.7') ?>" rel="stylesheet" />
-    <!-- Nepcha Analytics (nepcha.com) -->
-    <!-- Nepcha is a easy-to-use web analytics. No cookies and fully compliant with GDPR, CCPA and PECR. -->
     <script defer data-site="YOUR_DOMAIN_HERE" src="https://api.nepcha.com/js/nepcha-analytics.js"></script>
 
 </head>
@@ -32,8 +25,6 @@
 
     <?php echo $this->include("layout/sidebar_dashboard.php") ?>
     <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
-        <!-- Navbar -->
-
         <div class="container-fluid">
             <div class="page-header min-height-300 border-radius-xl mt-4" style="background-image: url('../assets/img/curved-images/curved0.jpg'); background-position-y: 50%;">
                 <span class="mask bg-gradient-info opacity-6"></span>
@@ -42,7 +33,8 @@
                 <div class="row gx-4">
                     <div class="col-auto">
                         <div class="avatar avatar-xl position-relative">
-                            <img src="https://avatars.akamai.steamstatic.com/fab9f6e14530bb7ab8f259edfab656b97d6111e2_full.jpg" alt="profile_image" class="w-100 border-radius-lg shadow-sm">
+                            <img src="https://cdn.pixabay.com/photo/2016/03/23/04/01/woman-1274056_1280.jpg" alt="profile_image" class="w-100 border-radius-lg shadow-sm">
+                            <!-- <img src="https://avatars.akamai.steamstatic.com/fab9f6e14530bb7ab8f259edfab656b97d6111e2_full.jpg" alt="profile_image" class="w-100 border-radius-lg shadow-sm"> -->
                         </div>
                     </div>
                     <div class="col-auto my-auto">
@@ -51,7 +43,7 @@
                                 Pegawai A
                             </h5>
                             <p class="mb-0 font-weight-bold text-sm">
-                                Karyawan A
+                                Jabatan A
                             </p>
                         </div>
                     </div>
@@ -117,15 +109,16 @@
                     </div>
                     <div class="card-body p-3">
                         <p class="text-sm">
-                            Hi, I’m Alec Thompson, Decisions: If you can’t decide, the answer is no. If two equally difficult paths, choose the one more painful in the short term (pain avoidance is creating an illusion of equality).
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel possimus quae facilis voluptatem dignissimos! Distinctio molestias recusandae iste aperiam architecto, consequuntur temporibus, sit veniam eligendi ducimus fugiat numquam laudantium animi?
                         </p>
                         <hr class="horizontal gray-light my-4">
                         <ul class="list-group">
-                            <li class="list-group-item border-0 ps-0 pt-0 text-sm"><strong class="text-dark">Full Name:</strong> &nbsp; Alec M. Thompson</li>
-                            <li class="list-group-item border-0 ps-0 text-sm"><strong class="text-dark">Mobile:</strong> &nbsp; (44) 123 1234 123</li>
-                            <li class="list-group-item border-0 ps-0 text-sm"><strong class="text-dark">Email:</strong> &nbsp; alecthompson@mail.com</li>
-                            <li class="list-group-item border-0 ps-0 text-sm"><strong class="text-dark">Location:</strong> &nbsp; USA</li>
-                            <li class="list-group-item border-0 ps-0 pb-0">
+                            <li class="list-group-item border-0 ps-0 pt-0 text-sm"><strong class="text-dark">Nama Lengkap:</strong> &nbsp; Pegawai A</li>
+                            <li class="list-group-item border-0 ps-0 text-sm"><strong class="text-dark">NIP:</strong> &nbsp; 94161651</li>
+                            <li class="list-group-item border-0 ps-0 text-sm"><strong class="text-dark">Jabatan:</strong> &nbsp; Jabatan A</li>
+                            <li class="list-group-item border-0 ps-0 text-sm"><strong class="text-dark">Nama OPD:</strong> &nbsp; OPD A</li>
+                            <li class="list-group-item border-0 ps-0 text-sm"><strong class="text-dark">Nomor Telepon:</strong> &nbsp; asdasdasd</li>
+                            <!-- <li class="list-group-item border-0 ps-0 pb-0">
                                 <strong class="text-dark text-sm">Social:</strong> &nbsp;
                                 <a class="btn btn-facebook btn-simple mb-0 ps-1 pe-2 py-0" href="javascript:;">
                                     <i class="fab fa-facebook fa-lg"></i>
@@ -136,7 +129,7 @@
                                 <a class="btn btn-instagram btn-simple mb-0 ps-1 pe-2 py-0" href="javascript:;">
                                     <i class="fab fa-instagram fa-lg"></i>
                                 </a>
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
                 </div>
@@ -151,7 +144,83 @@
                         </div>
                     </div>
                     <div class="card-body p-3">
-                        pengaturan
+                        <a class="" data-bs-toggle="collapse" href="#collapse_change_password" aria-expanded="false" aria-controls="collapseExample" id="changePasswordLink">
+                            <div class="w-100">
+                                <div class="row border-1 border-bottom">
+                                    <div class="col-11 ">
+                                        <p>
+                                            Ubah Sandi
+                                        </p>
+                                    </div>
+                                    <div class="col-1">
+                                        <img src="<?= base_url('assets/icon/plus.svg') ?>" alt="" class="plus-icon">
+                                        <img src="<?= base_url('assets/icon/dash.svg') ?>" alt="" class="minus-icon d-none">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </a>
+
+                        <div class="collapse" id="collapse_change_password">
+                            <form action="">
+                                <div class="mb-3">
+                                    <label for="currentPassword">Kata Sandi Saat Ini</label>
+                                    <input type="password" class="form-control" id="currentPassword">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="newPassword">Kata Sandi Baru</label>
+                                    <input type="password" class="form-control" id="newPassword">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="newPassword">Masukan Ulang Kata Sandi Baru</label>
+                                    <input type="password" class="form-control" id="re-newPassword">
+                                </div>
+                                <button type="submit" class="btn bg-secondary" id="change_password_submit" disabled>Simpan Perubahan</button>
+                            </form>
+                        </div>
+
+                        <a class="" data-bs-toggle="collapse" href="#collapse_change_information" aria-expanded="false" aria-controls="collapseExample" id="changeInformationLink">
+                            <div class="w-100">
+                                <div class="row border-1 border-bottom">
+                                    <div class="col-11 ">
+                                        <p>
+                                            Ubah Informasi Akun
+                                        </p>
+                                    </div>
+                                    <div class="col-1">
+                                        <img src="<?= base_url('assets/icon/plus.svg') ?>" alt="" class="plus-icon-information">
+                                        <img src="<?= base_url('assets/icon/dash.svg') ?>" alt="" class="minus-icon-information d-none">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <div class="collapse" id="collapse_change_information">
+                            <!-- form edit information -->
+                            <form action="" method="post">
+                                <div class="mb-3">
+                                    <label for="namaLengkap">Nama Lengkap:</label>
+                                    <input type="text" class="form-control" id="namaLengkap" name="namaLengkap" value="Pegawai A">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="nip">NIP:</label>
+                                    <input type="text" class="form-control" id="nip" name="nip" value="94161651">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="jabatan">Jabatan:</label>
+                                    <input type="text" class="form-control" id="jabatan" name="jabatan" value="Jabatan A">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="namaOPD">Nama OPD:</label>
+                                    <input type="text" class="form-control" id="namaOPD" name="namaOPD" value="OPD A">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="nomorTelepon">Nomor Telepon:</label>
+                                    <input type="text" class="form-control" id="nomorTelepon" name="nomorTelepon" value="asdasdasd">
+                                </div>
+                                <button type="submit" class="btn bg-gradient-primary">Simpan Perubahan</button>
+                            </form>
+                        </div>
                     </div>
                     <div class="card-footer d-flex justify-content-center">
                         <a class="btn bg-gradient-primary w-50" href="/">Logout</a>
@@ -167,6 +236,51 @@
     <script src="<?= base_url('soft/assets/js/core/bootstrap.min.js') ?>"></script>
     <script src="<?= base_url('soft/assets/js/plugins/perfect-scrollbar.min.js') ?>"></script>
     <script src="<?= base_url('soft/assets/js/plugins/smooth-scrollbar.min.js') ?>"></script>
+    <script>
+        function checkPasswordMatch() {
+            var newPassword = document.getElementById("newPassword").value;
+            var reNewPassword = document.getElementById("re-newPassword").value;
+            var submitButton = document.getElementById('change_password_submit');
+
+            if (newPassword === reNewPassword) {
+                submitButton.disabled = false;
+                submitButton.classList.remove("bg-secondary");
+                submitButton.classList.add("bg-gradient-primary");
+            } else {
+                submitButton.disabled = true;
+                submitButton.classList.remove("bg-gradient-primary");
+                submitButton.classList.add("bg-secondary");
+            }
+        }
+
+        var reNewPasswordInput = document.getElementById("re-newPassword");
+        reNewPasswordInput.addEventListener("input", checkPasswordMatch);
+    </script>
+    <script>
+        function toggleIcon(plusIcon, minusIcon) {
+            plusIcon.classList.toggle('d-none');
+            minusIcon.classList.toggle('d-none');
+        }
+
+        const toggleIconOnTrigger = (trigger, plusIcon, minusIcon) => {
+            trigger.addEventListener('click', () => {
+                toggleIcon(plusIcon, minusIcon);
+            });
+        };
+
+        const plusIcon = document.querySelector('.plus-icon');
+        const minusIcon = document.querySelector('.minus-icon');
+        const plusIconInformation = document.querySelector('.plus-icon-information');
+        const minusIconInformation = document.querySelector('.minus-icon-information');
+
+        const passwordTrigger = document.getElementById('changePasswordLink');
+        const informationTrigger = document.getElementById('changeInformationLink');
+
+        toggleIconOnTrigger(passwordTrigger, plusIcon, minusIcon);
+        toggleIconOnTrigger(informationTrigger, plusIconInformation, minusIconInformation);
+    </script>
+
+    </script>
 
     <script>
         const detailAkunTab = document.querySelector('.nav-link[aria-selected="true"]');

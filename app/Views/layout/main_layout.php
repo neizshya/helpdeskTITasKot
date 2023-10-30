@@ -42,6 +42,7 @@
                     'text' => 'Layanan Pengembangan Aplikasi',
                     // if logged in can access, if not, showing modal
                     // 'link' => '#',
+                    'alt' => 'Layanan Pengembangan Aplikasi',
                     'attributes' => 'href = "/form/layanan_pengembangan_aplikasi"'
 
                 ]) ?>
@@ -50,6 +51,7 @@
                     'imageSrc' => '/assets/icon/hosting.png',
                     'text' =>
                     'Hosting & Subdomain Web',
+                    'alt' => 'Hosting & Subdomain Web',
                     // if logged in can access, if not, showing modal
                     'attributes' => 'href = "/form/hosting"'
 
@@ -59,6 +61,7 @@
                     'imageSrc' => '/assets/icon/support-ticket.png',
                     'text' =>
                     'Cek Ticket',
+                    'alt' => 'Cek Ticket',
                     'attributes' => 'href = "/form/cek_ticket"'
                     // 'link' => '/form/cek_ticket'
                 ]) ?>
@@ -74,12 +77,14 @@
                     'imageSrc' => '/assets/icon/guest-list.png',
                     'text' =>
                     'Tamu Data Center',
+                    'alt' => 'Tamu Data Center',
                     'attributes' => 'href = "/form/tamu"'
                 ]) ?>
                 <?= view('components/home_card', [
                     'imageSrc' => '/assets/icon/database.png',
                     'text' =>
                     'Backup | Restore DB',
+                    'alt' => 'Backup | Restore DB',
                     // if logged in can access, if not, showing modal
                     'attributes' => 'href = "/form/backup_restore_db"'
                 ]) ?>
@@ -87,6 +92,7 @@
                     'imageSrc' => '/assets/icon/sertificate.png',
                     'text' =>
                     'Tanda Tangan Elektronik',
+                    'alt' => 'Tanda Tangan Elektronik',
                     'attributes' => 'href = "/form/e-sertifikat"'
                     // 'link' => '/form/e-sertifikat'
                 ]) ?>
@@ -106,6 +112,7 @@
                     'imageSrc' => '/assets/icon/connection.png',
                     'text' =>
                     'Jaringan',
+                    'alt' => 'Jaringan',
                     // if logged in can access, if not, showing modal
                     'attributes' => 'href = "/form/jaringan"'
                 ]) ?>
@@ -113,6 +120,7 @@
                     'imageSrc' => '/assets/icon/email.png',
                     'text' =>
                     'E-mail',
+                    'alt' => 'E-mail',
                     'attributes' => 'href = "/form/pendaftaran_email"',
                 ]) ?>
 

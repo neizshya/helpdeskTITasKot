@@ -43,7 +43,6 @@
                         <?= view('components/formopdsertifikat') ?>
                         <?= view('components/formnonopdsertifikat') ?>
 
-
                     </div>
                 </form>
             </div>
@@ -76,6 +75,21 @@
             if (nonpegawaiRadio.checked) {
                 nonOpdForm.classList.remove("d-none");
                 opdForm.classList.add("d-none");
+            }
+        });
+        // Store the initial HTML content of the forms
+        const initialOpdFormHTML = opdForm.innerHTML;
+        const initialNonOpdFormHTML = nonOpdForm.innerHTML;
+
+        pegawaiRadio.addEventListener("change", () => {
+            if (pegawaiRadio.checked) {
+                opdForm.innerHTML = initialOpdFormHTML; // Restore the initial HTML
+            }
+        });
+
+        nonpegawaiRadio.addEventListener("change", () => {
+            if (nonpegawaiRadio.checked) {
+                nonOpdForm.innerHTML = initialNonOpdFormHTML; // Restore the initial HTML
             }
         });
     </script>

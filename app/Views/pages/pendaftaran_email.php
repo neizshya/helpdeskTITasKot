@@ -82,6 +82,20 @@
                 opdForm.classList.add("d-none");
             }
         });
+        const initialOpdFormHTML = opdForm.innerHTML;
+        const initialNonOpdFormHTML = nonOpdForm.innerHTML;
+
+        pegawaiRadio.addEventListener("change", () => {
+            if (pegawaiRadio.checked) {
+                opdForm.innerHTML = initialOpdFormHTML; // Restore the initial HTML
+            }
+        });
+
+        nonpegawaiRadio.addEventListener("change", () => {
+            if (nonpegawaiRadio.checked) {
+                nonOpdForm.innerHTML = initialNonOpdFormHTML; // Restore the initial HTML
+            }
+        });
     </script>
     <script>
         const ktp = document.getElementById('ktp')

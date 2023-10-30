@@ -42,30 +42,30 @@
 
                     <form id="registerForm" action="">
                         <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="email" placeholder="username@tasikmalayakota.go.id" required>
+                            <input type="email" class="form-control" id="registeremail" placeholder="username@tasikmalayakota.go.id" required>
                             <label for="floatingInput">Email</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="password" class="form-control" id="password" placeholder="Password" required>
+                            <input type="password" class="form-control" id="registerpassword" placeholder="Password" required>
                             <label for="password">Kata Sandi</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="nip" placeholder="NIP" required>
+                            <input type="text" class="form-control" id="registernip" placeholder="NIP" required>
                             <label for="nip">NIP (tanpa spasi)</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="no_hp" placeholder="No. Telepon" required>
+                            <input type="text" class="form-control" id="register_no_hp" placeholder="No. Telepon" required>
                             <label for="no_hp">No. Telepon</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="nama_opd" placeholder="Nama OPD" required>
+                            <input type="text" class="form-control" id="register_nama_opd" placeholder="Nama OPD" required>
                             <label for="nama_opd">Nama OPD</label>
                         </div>
                         <div class="mb-3">
                             For human challenge (captcha)
                         </div>
                         <div class="col-12 my-3">
-                            <button class="btn btn-success w-100">Daftar</button>
+                            <button class="btn btn-success w-100" type="submit">Daftar</button>
 
                         </div>
                     </form>
@@ -86,6 +86,10 @@
                 <div class="modal-body">
 
                     <form id="forgotPasswordForm" action="">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="lupa_sandi_email" placeholder="username@tasikmalayakota.go.id" required>
+                            <label for="floatingInput">Masukan email yang terhubung dengan akun</label>
+                        </div>
                     </form>
                     <div class="col-12 d-flex justify-content-center">
                         <p>Sudah punya akun? <a href="#" id="showLoginLink2">Masuk</a> | Belum punya akun? <a href="#" id="showRegisterLink2">Daftar</a></p>
